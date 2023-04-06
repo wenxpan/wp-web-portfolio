@@ -7,3 +7,49 @@
 h1 {
   color: red;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  /* width: 90%; */
+  margin: 1rem;
+}
+
+header h2 {
+  margin: 1rem 0;
+}
+
+/* Blog page */
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-list section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0 2rem;
+}
+
+.blog-list section img {
+  width: 100%;
+  height: 50vw;
+  object-fit: cover center;
+  margin-bottom: 0.8rem;
+}
+
+.blog-list section p {
+  align-self: flex-end;
+}
