@@ -26,8 +26,17 @@ main header h2 {
 }
 
 /* general links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
 a:visited {
   color: black;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Blog page and Projects page*/
@@ -61,7 +70,44 @@ a:visited {
 }
 
 .project-list section a {
-  text-decoration: none;
   border: 1px solid teal;
   padding: 0.2rem 0.4rem;
+}
+
+/* Contact page */
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.social-media-list section {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* contact page - form */
+form {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 80%;
+}
+/* TODO: fix left margin, make textarea responsive */
+
+textarea {
+  resize: none;
+}
+
+input {
+  padding: 0.3rem;
 }

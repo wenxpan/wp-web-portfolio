@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Contact page</h1>
+    <main>
+      <!-- Main content's header section -->
+      <header>
+        <h2>Contact me</h2>
+        <p>
+          Contact me page. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Doloremque, repudiandae.
+        </p>
+      </header>
+      <section class="social-media-list">
+        <section>
+          <img src="./assets/github_logo.svg" alt="github logo" />
+          <a href="https://github.com/wenxuan-pan">wenxuan-pan</a>
+        </section>
+        <section>
+          <img src="./assets/linkedin_logo.svg" alt="github logo" />
+          <a href="https://www.linkedin.com/in/wenxuan-p-54484b209/"
+            >Wenxuan Pan</a
+          >
+        </section>
+        <section>
+          <img src="./assets/twitter_logo.svg" alt="github logo" />
+          <a href="https://www.twitter.com">wenxuanp</a>
+        </section>
+      </section>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="website">Website (optional)</label>
+        <input type="url" id="website" name="website" />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" cols="50" required>
+Hello! I'm writing about </textarea
+        >
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
   </body>
 </html>
