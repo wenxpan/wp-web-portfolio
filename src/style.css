@@ -13,43 +13,55 @@ main {
   flex-direction: column;
 }
 
-header {
+/* main header */
+main header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
   text-align: center;
-  /* width: 90%; */
   margin: 1rem;
 }
 
-header h2 {
+main header h2 {
   margin: 1rem 0;
 }
 
-/* Blog page */
+/* general links */
+a:visited {
+  color: black;
+}
 
-.blog-list {
+/* Blog page and Projects page*/
+
+.blog-list,
+.project-list {
   display: flex;
   flex-direction: column;
 }
 
-.blog-list section {
+.blog-list section,
+.project-list section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem 0;
   padding: 0 2rem;
+  gap: 0.5rem;
 }
 
-.blog-list section img {
+.blog-list section img,
+.project-list section img {
   width: 100%;
   height: 50vw;
-  object-fit: cover center;
   margin-bottom: 0.8rem;
+  border-radius: 0.5rem;
 }
 
 .blog-list section p {
   align-self: flex-end;
+}
+
+.project-list section a {
+  text-decoration: none;
+  border: 1px solid teal;
+  padding: 0.2rem 0.4rem;
 }
