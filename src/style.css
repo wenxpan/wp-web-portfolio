@@ -163,3 +163,8 @@ input {
   /* flex: 1 1 auto; */
   text-align: center;
 }
+
+.about-page button {
+  align-self: center;
+  padding: 0.2rem 1rem;
+}
