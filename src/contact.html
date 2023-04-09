@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- header section -->
+    <header>
+      <img id="wp-logo" src="assets/WP_logo_transparent.svg" width="50px" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
     <main>
       <!-- Main content's header section -->
-      <header>
+      <section class="contact-intro">
         <h2>Contact me</h2>
         <p>
           Contact me page. Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Doloremque, repudiandae.
         </p>
-      </header>
+      </section>
       <section class="social-media-list">
         <section>
           <img src="./assets/github_logo.svg" alt="github logo" />
@@ -46,8 +57,12 @@
         <textarea id="message" name="message" rows="5" cols="50" required>
 Hello! I'm writing about </textarea
         >
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" class="button btn-dark" />
       </form>
     </main>
+    <footer>
+      <img src="assets/WP_logo_transparent.svg" width="50px" />
+      <p>© 2023 Wenxuan Pan</p>
+    </footer>
   </body>
 </html>

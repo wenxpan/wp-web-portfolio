@@ -70,7 +70,8 @@ nav a:hover {
 main {
   display: flex;
   flex-direction: column;
-  margin: 1rem 2rem;
+  margin: 3rem 1.5rem;
+  row-gap: 3rem;
 }
 /* footer */
 footer {
@@ -99,8 +100,8 @@ footer {
   margin-top: 1rem;
 }
 
-/* Home page - about me section */
-.about-me {
+/* Home page - about me section & about page */
+.home-about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,11 +125,17 @@ footer {
   align-items: center;
   text-align: center;
   row-gap: 1rem;
-  margin: 1rem 0;
 }
 
-.home-project section p {
-  margin: 0.5rem 0;
+.home-project section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.home-project section img {
+  width: 100%;
 }
 
 /* home page - blog posts */
@@ -155,41 +162,38 @@ footer {
   text-align: end;
 }
 
-/* main header */
-main header {
+/* Blog page and Projects page*/
+
+.project-intro,
+.blog-intro,
+.contact-intro {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
   text-align: center;
-  margin: 1rem;
 }
-
-main header h2 {
-  margin: 1rem 0;
-}
-
-/* Blog page and Projects page*/
 
 .blog-list,
 .project-list {
   display: flex;
   flex-direction: column;
+  row-gap: 1rem;
 }
 
-.blog-list section,
-.project-list section {
+.blog-list article,
+.project-list article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 0;
-  padding: 0 2rem;
-  gap: 0.5rem;
+  row-gap: 0.5rem;
+  text-align: center;
 }
 
-.blog-list section img,
-.project-list section img {
+.blog-list article img,
+.project-list article img {
   width: 100%;
   height: 50vw;
-  margin-bottom: 0.8rem;
   border-radius: 0.5rem;
 }
 
@@ -197,22 +201,12 @@ main header h2 {
   align-self: flex-end;
 }
 
-.project-list section a {
-  border: 1px solid teal;
-  padding: 0.2rem 0.4rem;
-}
-
 /* Contact page */
-
-main {
-  display: flex;
-  align-items: center;
-}
 
 .social-media-list {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -222,14 +216,30 @@ main {
   align-items: center;
 }
 
+.social-media-list section a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-media-list section a:hover {
+  text-decoration: underline;
+}
+
 /* contact page - form */
 form {
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
+  align-self: center;
   gap: 0.5rem;
   width: 80%;
 }
+
+form .button {
+  border: none;
+  align-self: center;
+}
+
 /* TODO: fix left margin, make textarea responsive */
 
 textarea {
@@ -250,30 +260,23 @@ input {
 } */
 
 /* about - about me */
-/* .about-me {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 1rem;
-}
 
-.about-me-heading {
+.about-page > * {
+  margin: 0.5rem 0;
+}
+.about-page .about-me {
   display: flex;
   flex-direction: column;
-  flex: 3;
-  align-self: center;
-  text-align: center;
+  align-items: center;
+  row-gap: 0.5rem;
 }
 
-.social-icon-list img {
-  margin: 0 0.2rem;
+.my-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
 }
-
-#profile {
-  flex: 1;
-  border-radius: 50%;
-  margin-right: 2rem;
-} */
-/* TODO: fix flexbox here */
 
 .my-skills img {
   width: 10vw;
@@ -292,7 +295,6 @@ input {
   text-align: center;
 }
 
-.about-page button {
+.about-page .button {
   align-self: center;
-  padding: 0.2rem 1rem;
 }
