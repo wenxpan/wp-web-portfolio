@@ -47,22 +47,22 @@ header {
 }
 
 /* navbar */
-nav {
+header nav {
   display: flex;
   flex-direction: column;
 }
 
-nav a {
+header nav a {
   text-decoration: none;
   color: white;
   margin: 0.5rem;
 }
 
-nav a:visited {
+header nav a:visited {
   color: white;
 }
 
-nav a:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 
@@ -147,14 +147,12 @@ footer {
   row-gap: 0.5rem;
 }
 
-.home-blog-title,
-.home-blog-date {
+.home-blog-card {
   text-decoration: none;
   color: black;
 }
 
-.home-blog-title:hover,
-.home-blog-date:hover {
+.home-blog-card:hover {
   text-decoration: underline;
 }
 
@@ -197,8 +195,18 @@ footer {
   border-radius: 0.5rem;
 }
 
-.blog-list section p {
+.blog-post-card p {
   align-self: flex-end;
+}
+
+/* blog page cards */
+.blog-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.blog-list a:hover {
+  text-decoration: underline;
 }
 
 /* Contact page */
@@ -297,4 +305,37 @@ input {
 
 .about-page .button {
   align-self: center;
+}
+
+/* blog post page */
+.blog-nav {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0;
+  background-color: #eff1f5;
+  margin-top: 1rem;
+}
+
+.blog-nav a {
+  background: #0e7c7b;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.blog-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.blog-article section h1 {
+  text-align: center;
+}
+
+.blog-article section p {
+  text-align: end;
 }
