@@ -150,6 +150,8 @@ footer {
 .home-blog-card {
   text-decoration: none;
   color: black;
+  align-self: flex-start;
+  width: 100%;
 }
 
 .home-blog-card:hover {
@@ -332,10 +334,10 @@ input {
   row-gap: 1rem;
 }
 
-.blog-article section h1 {
+.blog-article section {
   text-align: center;
 }
 
-.blog-article section p {
-  text-align: end;
+.blog-article img {
+  width: 100%;
 }
