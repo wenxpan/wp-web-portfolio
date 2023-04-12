@@ -110,13 +110,21 @@ footer {
   row-gap: 0.5rem;
 }
 
+#profile {
+  width: 50%;
+  border-radius: 50%;
+}
+
 .social-icon-list img {
   margin: 0 0.2rem;
 }
 
-#profile {
-  width: 20vw;
-  border-radius: 50%;
+.home-about-me section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 /* home page - featured projects */
@@ -395,4 +403,54 @@ section[id^="blog-heading-"] * {
   background: #00000070 url("./assets/edho-pratama-yeB9jDmHm6M-unsplash.jpg")
     no-repeat;
   background-size: cover;
+}
+
+/* *** TABLET STYLES *** */
+@media only screen and (min-width: 550px) {
+  header {
+    flex-direction: row;
+  }
+  header nav {
+    flex-direction: row;
+  }
+  #profile {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  /* resize about me */
+  .home-about-me {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+  }
+
+  .home-about-me h2,
+  .home-about-me .social-icon-list {
+    width: 100%;
+  }
+
+  .home-about-me > img {
+    flex: 1;
+  }
+
+  .home-about-me section {
+    flex: 5;
+  }
+
+  /* resize home page projects */
+  .home-project {
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 1.5rem;
+  }
+
+  .home-project h2 {
+    width: 100%;
+  }
+
+  .home-project section {
+    flex: 1;
+  }
 }
