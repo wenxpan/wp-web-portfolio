@@ -90,6 +90,7 @@ footer {
   padding: 2rem;
   background: #eff1f5;
   background-size: cover;
+  text-align: center;
 }
 
 #hero em {
@@ -303,6 +304,7 @@ input {
 .my-skills section figure {
   /* flex: 1 1 auto; */
   text-align: center;
+  margin: 0 0.3rem;
 }
 
 .about-page .button {
