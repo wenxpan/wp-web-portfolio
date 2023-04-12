@@ -454,3 +454,23 @@ section[id^="blog-heading-"] * {
     flex: 1;
   }
 }
+
+/* *** DESKTOP STYLES *** */
+@media only screen and (min-width: 970px) {
+  #profile {
+    width: 20%;
+  }
+  .home-about-me {
+    width: 80%;
+    align-self: center;
+  }
+  .home-project {
+    width: 80%;
+    align-self: center;
+    column-gap: 3rem;
+  }
+  .home-posts {
+    width: 80%;
+    align-self: center;
+  }
+}
