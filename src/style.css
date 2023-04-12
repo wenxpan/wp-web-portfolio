@@ -110,7 +110,7 @@ footer {
   row-gap: 0.5rem;
 }
 
-#profile {
+.profile {
   width: 50%;
   border-radius: 50%;
 }
@@ -283,11 +283,18 @@ input {
 .about-page > * {
   margin: 0.5rem 0;
 }
-.about-page .about-me {
+.about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 0.5rem;
+}
+
+.about-me section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .my-skills {
@@ -298,14 +305,14 @@ input {
 }
 
 .my-skills img {
-  width: 10vw;
+  width: 15vw;
 }
 
 .my-skills section {
   display: flex;
   flex-wrap: wrap;
   row-gap: 1.5rem;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -413,30 +420,39 @@ section[id^="blog-heading-"] * {
   header nav {
     flex-direction: row;
   }
-  #profile {
+  .profile {
     width: 30%;
   }
 }
 
 @media only screen and (min-width: 680px) {
   /* resize about me */
-  .home-about-me {
+  .home-about-me,
+  .about-me {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 2rem;
   }
 
   .home-about-me h2,
-  .home-about-me .social-icon-list {
+  .home-about-me .social-icon-list,
+  .about-me h2,
+  .about-me .social-icon-list {
     width: 100%;
   }
 
-  .home-about-me > img {
+  .profile {
     flex: 1;
   }
 
-  .home-about-me section {
+  .home-about-me section,
+  .about-me section {
     flex: 5;
+  }
+
+  .about-me h2,
+  .about-me .social-icon-list {
+    text-align: center;
   }
 
   /* resize home page projects */
@@ -453,11 +469,17 @@ section[id^="blog-heading-"] * {
   .home-project section {
     flex: 1;
   }
+
+  /* resize about my skills */
+  .my-skills img {
+    width: 10vw;
+  }
 }
 
 /* *** DESKTOP STYLES *** */
 @media only screen and (min-width: 970px) {
-  #profile {
+  /* home page */
+  .profile {
     width: 20%;
   }
   .home-about-me {
@@ -470,7 +492,16 @@ section[id^="blog-heading-"] * {
     column-gap: 3rem;
   }
   .home-posts {
+    width: 60%;
+    align-self: center;
+  }
+  /* about page */
+  .my-skills,
+  .about-me {
     width: 80%;
     align-self: center;
+  }
+  .my-skills img {
+    width: 7vw;
   }
 }
