@@ -179,7 +179,7 @@ footer {
 .project-list {
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+  row-gap: 1.5rem;
 }
 
 .blog-list article,
@@ -311,6 +311,24 @@ input {
 }
 
 /* blog post page */
+.blog-post-main {
+  margin-top: 0;
+}
+
+.blog-post-main img {
+  width: 100%;
+}
+
+figcaption {
+  color: grey;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+figcaption a {
+  color: grey;
+}
+
 .blog-nav {
   display: flex;
   justify-content: space-around;
@@ -328,7 +346,7 @@ input {
   border-radius: 0.5rem;
 }
 
-.blog-article {
+.blog-post-main article {
   display: flex;
   flex-direction: column;
   align-items: center;
