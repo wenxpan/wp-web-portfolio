@@ -202,7 +202,6 @@ footer {
 .blog-list article img,
 .project-list article img {
   width: 100%;
-  height: 50vw;
   border-radius: 0.5rem;
 }
 
@@ -474,6 +473,23 @@ section[id^="blog-heading-"] * {
   .my-skills img {
     width: 10vw;
   }
+  /* resize project page */
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  /* blog page */
+  .blog-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+  .blog-list img {
+    height: 30vw;
+    object-fit: cover;
+  }
 }
 
 /* *** DESKTOP STYLES *** */
@@ -495,6 +511,7 @@ section[id^="blog-heading-"] * {
     width: 60%;
     align-self: center;
   }
+
   /* about page */
   .my-skills,
   .about-me {
@@ -503,5 +520,19 @@ section[id^="blog-heading-"] * {
   }
   .my-skills img {
     width: 7vw;
+  }
+
+  /* project page */
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* blog page */
+  .blog-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog-list img {
+    height: 20vw;
+    object-fit: cover;
   }
 }
