@@ -237,13 +237,19 @@ footer {
 }
 
 /* contact page - form */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
 form {
-  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   align-self: center;
   gap: 0.5rem;
-  width: 80%;
+  width: 100%;
 }
 
 form .button {
@@ -251,10 +257,11 @@ form .button {
   align-self: center;
 }
 
-/* TODO: fix left margin, make textarea responsive */
+/* TODO: make textarea responsive */
 
 textarea {
   resize: none;
+  padding: 0.5rem;
 }
 
 input {
@@ -262,13 +269,6 @@ input {
 }
 
 /* About page */
-
-/* .about-page {
-  display: flex;
-  flex-direction: column;
-  margin: 1.5rem;
-  row-gap: 2rem;
-} */
 
 /* about - about me */
 
