@@ -35,8 +35,27 @@
   border-radius: 0.5rem;
 }
 
-.blog-post-card *:not(img) {
+.blog-post-card > *:not(.image-area) {
   padding: 0 1rem;
+}
+
+.image-area {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.prompt-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
 }
 
 .blog-post-card:hover {
