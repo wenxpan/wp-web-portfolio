@@ -5,6 +5,9 @@
   font-family: Noto Sans, sans-serif;
 }
 
+/* *** GENERAL COMPONENTS *** */
+
+/* logo */
 .wp-logo {
   width: 50px;
 }
@@ -16,10 +19,7 @@
   border-radius: 0.5rem;
   display: inline-block;
   min-width: 8rem;
-}
-
-.button:hover {
-  background-color: #0e7c7b;
+  transition: 0.2s;
 }
 
 .btn-dark {
@@ -27,8 +27,13 @@
   color: white;
 }
 
-.button-dark:visited {
+.btn-dark:visited {
   color: white;
+}
+
+.btn-dark:hover {
+  border-radius: 0;
+  padding: 0.5rem 2rem;
 }
 
 .btn-light {
@@ -40,6 +45,12 @@
   color: #07271e;
 }
 
+.btn-light:hover {
+  background-color: #0e7c7b;
+  color: white;
+}
+
+/* *** SECTIONS FOR ALL PAGES *** */
 /* header */
 body > header {
   display: flex;
