@@ -9,8 +9,30 @@
   text-align: center;
 }
 
-#hero em {
-  color: #ff9f1c;
+#hero:hover em {
+  animation: heroEffect 0.5s forwards;
+}
+
+#hero:not(hover) em {
+  animation: heroEffectBack 0.5s backwards;
+}
+
+@keyframes heroEffect {
+  from {
+  }
+  to {
+    color: #ff9f1c;
+    font-size: 2rem;
+  }
+}
+
+@keyframes heroEffectBack {
+  from {
+    color: #ff9f1c;
+    font-size: 2rem;
+  }
+  to {
+  }
 }
 
 #hero .button {
