@@ -5,6 +5,10 @@
   font-family: Noto Sans, sans-serif;
 }
 
+.wp-logo {
+  width: 50px;
+}
+
 /* buttons */
 .button {
   text-decoration: none;
