@@ -5,11 +5,19 @@
   font-family: Noto Sans, sans-serif;
 }
 
-/* *** GENERAL COMPONENTS *** */
+/* *** REUSABLE COMPONENTS *** */
 
 /* logo */
 .wp-logo {
   width: 50px;
+}
+
+/* profile image */
+.profile {
+  width: 40vw;
+  min-width: 200px;
+  max-width: 300px;
+  border-radius: 50%;
 }
 
 /* buttons */
@@ -32,7 +40,6 @@
 }
 
 .btn-dark:hover {
-  /* border-radius: 0; */
   padding: 0.5rem 5rem;
 }
 
@@ -48,6 +55,28 @@
 .btn-light:hover {
   background-color: #0e7c7b;
   color: white;
+}
+
+/* social icon list */
+
+.logo-fill {
+  display: none;
+}
+
+.social-icon-list a:hover .logo-fill {
+  display: inline-block;
+}
+
+.social-icon-list a:hover .logo-line {
+  display: none;
+}
+
+.home-about-me section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 /* *** SECTIONS FOR ALL PAGES *** */
