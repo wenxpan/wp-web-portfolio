@@ -1,0 +1,156 @@
+/* home page banner */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: #eff1f5;
+  background-size: cover;
+  text-align: center;
+}
+
+#hero em {
+  color: #ff9f1c;
+}
+
+#hero .button {
+  margin-top: 1rem;
+}
+
+/* Home page - about me section */
+.home-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 0.5rem;
+}
+
+.profile {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.social-icon-list img {
+  margin: 0 0.2rem;
+}
+
+.home-about-me section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* home page - featured projects */
+.home-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 1rem;
+}
+
+.home-project section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.home-project section img {
+  width: 100%;
+}
+
+/* home page - blog posts */
+
+.home-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.home-blog-card {
+  text-decoration: none;
+  color: black;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.home-blog-card:hover {
+  text-decoration: underline;
+}
+
+.home-blog-date {
+  text-align: end;
+}
+
+/* *** TABLET STYLES *** */
+@media only screen and (min-width: 680px) {
+  /* resize about me */
+  .home-about-me,
+  .about-me {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+  }
+
+  .home-about-me h2,
+  .home-about-me .social-icon-list,
+  .about-me h2,
+  .about-me .social-icon-list {
+    width: 100%;
+  }
+
+  .profile {
+    flex: 1;
+  }
+
+  .home-about-me section,
+  .about-me section {
+    flex: 5;
+  }
+
+  .about-me h2,
+  .about-me .social-icon-list {
+    text-align: center;
+  }
+
+  /* resize home projects */
+  .home-project {
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 1.5rem;
+  }
+
+  .home-project h2 {
+    width: 100%;
+  }
+
+  .home-project section {
+    flex: 1;
+  }
+}
+
+/* *** DESKTOP STYLES *** */
+@media only screen and (min-width: 970px) {
+  /* home page */
+  .profile {
+    width: 20%;
+  }
+  .home-about-me {
+    width: 80%;
+    align-self: center;
+  }
+  .home-project {
+    width: 80%;
+    align-self: center;
+    column-gap: 3rem;
+  }
+  .home-posts {
+    width: 60%;
+    align-self: center;
+  }
+}

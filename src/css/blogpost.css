@@ -1,0 +1,108 @@
+/* blog post page */
+.blog-post-main {
+  margin-top: 0;
+}
+
+.blog-post-main img {
+  width: 100%;
+}
+
+figcaption {
+  color: grey;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+figcaption a {
+  color: grey;
+}
+
+.blog-nav {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0;
+  background-color: #eff1f5;
+  margin-top: 1rem;
+}
+
+.blog-nav a {
+  background: #0e7c7b;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.blog-post-main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+/* title banner */
+
+section[id^="blog-heading-"] {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 2.5rem;
+  width: 100vw;
+}
+
+section[id^="blog-heading-"] * {
+  background-color: white;
+  margin: 1rem 0;
+}
+
+#blog-heading-1 {
+  background: #00000070
+    url("../assets/blog-img/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+#blog-heading-2 {
+  background: #00000070
+    url("../assets/blog-img/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+#blog-heading-3 {
+  background: #00000070
+    url("../assets/blog-img/alvaro-reyes-qWwpHwip31M-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+#blog-heading-4 {
+  background: #00000070
+    url("../assets/blog-img/marvin-meyer-SYTO3xs06fU-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+#blog-heading-5 {
+  background: #00000070
+    url("../assets/blog-img/edho-pratama-yeB9jDmHm6M-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* *** TABLET STYLES *** */
+@media only screen and (min-width: 680px) {
+  /* blog post */
+  section[id^="blog-heading-"] > * {
+    margin: 2rem 0;
+  }
+
+  .blog-post-main figure {
+    width: 80%;
+  }
+}
+
+/* *** DESKTOP STYLES *** */
+@media only screen and (min-width: 970px) {
+  /* blog post */
+  .blog-post-main article main {
+    width: 70%;
+  }
+}
