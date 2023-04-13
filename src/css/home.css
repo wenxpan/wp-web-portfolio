@@ -2,6 +2,7 @@
 #hero {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   padding: 2rem;
   background: #eff1f5;
@@ -49,12 +50,24 @@
 }
 
 .profile {
-  width: 50%;
+  width: 40vw;
+  min-width: 200px;
+  max-width: 300px;
   border-radius: 50%;
 }
 
-.social-icon-list img {
-  margin: 0 0.2rem;
+/* social icon list */
+
+.logo-fill {
+  display: none;
+}
+
+.social-icon-list a:hover .logo-fill {
+  display: inline-block;
+}
+
+.social-icon-list a:hover .logo-line {
+  display: none;
 }
 
 .home-about-me section {
@@ -78,11 +91,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 0.5rem;
+  row-gap: 1rem;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  transition: 0.8s;
+}
+
+.home-project section:hover {
+  box-shadow: 8.6px 7.1px 19px -11px rgba(0, 0, 0, 0.065),
+    36px 30px 45px -11px rgba(0, 0, 0, 0.13);
 }
 
 .home-project section img {
   width: 100%;
+  border-radius: 1rem;
 }
 
 /* home page - blog posts */
@@ -159,9 +181,6 @@
 /* *** DESKTOP STYLES *** */
 @media only screen and (min-width: 970px) {
   /* home page */
-  .profile {
-    width: 20%;
-  }
   .home-about-me {
     width: 80%;
     align-self: center;

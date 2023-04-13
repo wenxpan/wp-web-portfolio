@@ -12,17 +12,28 @@
   row-gap: 1.5rem;
 }
 
-.project-list article {
+.project-list section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 0.5rem;
+  row-gap: 1rem;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
+  transition: 0.8s;
+}
+.project-list section:hover {
+  box-shadow: 8.6px 7.1px 19px -11px rgba(0, 0, 0, 0.065),
+    36px 30px 45px -11px rgba(0, 0, 0, 0.13);
 }
 
-.project-list article img {
+.project-list section img {
   width: 100%;
   border-radius: 0.5rem;
+}
+
+.project-list section *:not(img, a) {
+  padding: 0 1rem;
 }
 
 /* *** TABLET STYLES *** */

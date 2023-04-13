@@ -19,7 +19,7 @@
   border-radius: 0.5rem;
   display: inline-block;
   min-width: 8rem;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .btn-dark {
@@ -32,8 +32,8 @@
 }
 
 .btn-dark:hover {
-  border-radius: 0;
-  padding: 0.5rem 2rem;
+  /* border-radius: 0; */
+  padding: 0.5rem 5rem;
 }
 
 .btn-light {
@@ -105,8 +105,5 @@ body > footer {
   }
   body > header nav {
     flex-direction: row;
-  }
-  .profile {
-    width: 30%;
   }
 }
