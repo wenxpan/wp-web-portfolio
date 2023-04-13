@@ -41,6 +41,10 @@ figcaption a {
   row-gap: 1rem;
 }
 
+.blog-post-main > p {
+  align-self: flex-start;
+}
+
 /* title banner */
 
 section[id^="blog-heading-"] {
@@ -97,12 +101,17 @@ section[id^="blog-heading-"] * {
   .blog-post-main figure {
     width: 80%;
   }
+
+  .blog-post-main > article > *:not(section) {
+    width: 80%;
+  }
 }
 
 /* *** DESKTOP STYLES *** */
 @media only screen and (min-width: 970px) {
   /* blog post */
-  .blog-post-main article main {
-    width: 70%;
+
+  .blog-post-main > article > *:not(section) {
+    width: 60%;
   }
 }
