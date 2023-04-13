@@ -68,14 +68,14 @@ header nav a:hover {
 }
 
 /* main sec */
-main {
+body > main {
   display: flex;
   flex-direction: column;
   margin: 3rem 1.5rem;
   row-gap: 3rem;
 }
 /* footer */
-footer {
+body > footer {
   display: flex;
   background-color: #eff1f5;
   justify-content: space-between;
@@ -477,7 +477,7 @@ section[id^="blog-heading-"] * {
 
   /* resize about my skills */
   .my-skills img {
-    width: 10vw;
+    width: 8vw;
   }
   /* resize project page */
   .project-list {
@@ -520,6 +520,14 @@ section[id^="blog-heading-"] * {
     margin-top: 1rem;
     justify-self: center;
   }
+  /* blog post */
+  section[id^="blog-heading-"] > * {
+    margin: 2rem 0;
+  }
+
+  .blog-post-main figure {
+    width: 80%;
+  }
 }
 
 /* *** DESKTOP STYLES *** */
@@ -549,7 +557,7 @@ section[id^="blog-heading-"] * {
     align-self: center;
   }
   .my-skills img {
-    width: 7vw;
+    width: 6vw;
   }
 
   /* project page */
@@ -581,5 +589,10 @@ section[id^="blog-heading-"] * {
 
   form .button {
     grid-column: span 6;
+  }
+
+  /* blog post */
+  .blog-post-main article main {
+    width: 70%;
   }
 }
