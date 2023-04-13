@@ -85,10 +85,10 @@ body > footer {
 
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 550px) {
-  header {
+  body > header {
     flex-direction: row;
   }
-  header nav {
+  body > header nav {
     flex-direction: row;
   }
   .profile {
