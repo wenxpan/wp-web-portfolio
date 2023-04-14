@@ -5,7 +5,7 @@
   border-radius: 50%;
 }
 
-.social-icon-list img {
+.social-list-icons img {
   margin: 0 0.2rem;
 }
 
@@ -64,10 +64,8 @@
     column-gap: 2rem;
   }
 
-  .home-about-me h2,
-  .home-about-me .social-icon-list,
   .about-me h2,
-  .about-me .social-icon-list {
+  .about-me .social-list-icons {
     width: 100%;
   }
 
@@ -81,7 +79,7 @@
   }
 
   .about-me h2,
-  .about-me .social-icon-list {
+  .about-me .social-list-icons {
     text-align: center;
   }
 
