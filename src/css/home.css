@@ -49,6 +49,18 @@
   row-gap: 0.5rem;
 }
 
+.home-about-me section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.home-about-me .button {
+  align-self: center;
+}
+
 /* home page - featured projects */
 .home-project {
   display: flex;
@@ -105,8 +117,7 @@
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 680px) {
   /* resize about me */
-  .home-about-me,
-  .about-me {
+  .home-about-me {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 2rem;
@@ -124,11 +135,6 @@
   .home-about-me section,
   .about-me section {
     flex: 5;
-  }
-
-  .about-me h2,
-  .about-me .social-icon-list {
-    text-align: center;
   }
 
   /* resize home projects */
