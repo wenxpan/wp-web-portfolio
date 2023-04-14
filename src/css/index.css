@@ -9,7 +9,8 @@
 
 /* logo */
 .wp-logo {
-  width: 50px;
+  width: 15vw;
+  max-width: 50px;
 }
 
 /* profile image */
@@ -31,7 +32,7 @@
 }
 
 .btn-dark {
-  background: #0e7c7b;
+  background: #0980a7;
   color: white;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .btn-light:hover {
-  background-color: #0e7c7b;
+  background-color: #0980a7;
   color: white;
 }
 
@@ -87,8 +88,8 @@ body > header {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 1rem;
-  background-color: #0e7c7b;
+  padding: 0.5rem 1rem;
+  background-color: #add8e6;
 }
 
 /* navbar */
@@ -99,12 +100,12 @@ body > header nav {
 
 body > header nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   margin: 0.5rem;
 }
 
 body > header nav a:visited {
-  color: white;
+  color: black;
 }
 
 body > header nav a:hover {

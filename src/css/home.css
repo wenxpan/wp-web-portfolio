@@ -22,14 +22,14 @@
   from {
   }
   to {
-    color: #ff9f1c;
+    color: #1c7c54;
     font-size: 2rem;
   }
 }
 
 @keyframes heroEffectBack {
   from {
-    color: #ff9f1c;
+    color: #1c7c54;
     font-size: 2rem;
   }
   to {
@@ -55,7 +55,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  row-gap: 1rem;
+  row-gap: 2rem;
 }
 
 .home-project section {
