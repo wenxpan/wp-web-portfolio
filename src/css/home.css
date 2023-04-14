@@ -49,7 +49,7 @@
   row-gap: 0.5rem;
 }
 
-.home-about-me section {
+.home-about-me div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,8 +132,7 @@
     flex: 1;
   }
 
-  .home-about-me section,
-  .about-me section {
+  .home-about-me div {
     flex: 5;
   }
 
