@@ -45,16 +45,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   row-gap: 0.5rem;
 }
 
-.home-about-me div {
+.home-about-me ol {
   display: flex;
   flex-direction: column;
-  align-items: center;
   row-gap: 1rem;
-  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 
 .home-about-me .button {
@@ -126,14 +124,19 @@
   .home-about-me h2,
   .home-about-me .social-list-icons {
     width: 100%;
+    text-align: center;
   }
 
   .profile {
     flex: 1;
   }
 
-  .home-about-me div {
+  .home-about-me ol {
     flex: 5;
+  }
+
+  .home-about-me .button {
+    width: 100%;
   }
 
   /* resize home projects */
