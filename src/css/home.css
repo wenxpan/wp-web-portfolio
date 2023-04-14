@@ -118,6 +118,15 @@
   text-align: end;
 }
 
+#home-posts h3::after {
+  content: url(../assets/arrow_right_fill.svg);
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin-left: 5px;
+  color: inherit;
+}
+
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 680px) {
   /* resize about me */
