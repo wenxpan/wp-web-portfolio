@@ -22,14 +22,14 @@
   from {
   }
   to {
-    color: #1c7c54;
+    color: #0980a7;
     font-size: 2rem;
   }
 }
 
 @keyframes heroEffectBack {
   from {
-    color: #1c7c54;
+    color: #0980a7;
     font-size: 2rem;
   }
   to {
