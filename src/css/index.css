@@ -64,11 +64,11 @@
   display: none;
 }
 
-.social-icon-list a:hover .logo-fill {
+.social-list-icons a:hover .logo-fill {
   display: inline-block;
 }
 
-.social-icon-list a:hover .logo-line {
+.social-list-icons a:hover .logo-line {
   display: none;
 }
 

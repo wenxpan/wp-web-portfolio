@@ -6,26 +6,27 @@
   text-align: center;
 }
 
-.social-media-list {
+.social-list-full {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
 }
 
-.social-media-list section {
+.social-list-full a {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-}
-
-.social-media-list section a {
   text-decoration: none;
   color: black;
 }
 
-.social-media-list section a:hover {
-  text-decoration: underline;
+.social-list-full a:hover .logo-fill {
+  display: inline-block;
+}
+
+.social-list-full a:hover .logo-line {
+  display: none;
 }
 
 /* contact page - form */
