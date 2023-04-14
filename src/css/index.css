@@ -72,8 +72,6 @@
   display: none;
 }
 
-
-
 /* *** SECTIONS FOR ALL PAGES *** */
 /* header */
 body > header {
@@ -87,23 +85,28 @@ body > header {
 }
 
 /* navbar */
-body > header nav {
+.header-nav {
   display: flex;
   flex-direction: column;
 }
 
-body > header nav a {
+.header-nav a {
   text-decoration: none;
   color: black;
-  margin: 0.5rem;
+  padding: 0.8rem;
+  width: 100vw;
+  transition: 0.2s;
 }
 
-body > header nav a:visited {
+a:visited {
   color: black;
 }
 
-body > header nav a:hover {
-  text-decoration: underline;
+.header-nav a:hover,
+.nav-active,
+.nav-active:visited {
+  background-color: #0980a7;
+  color: white;
 }
 
 /* main sec */
@@ -127,7 +130,11 @@ body > footer {
   body > header {
     flex-direction: row;
   }
-  body > header nav {
+  .header-nav {
     flex-direction: row;
+  }
+
+  .header-nav a {
+    width: auto;
   }
 }
