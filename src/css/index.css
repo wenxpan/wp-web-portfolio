@@ -102,11 +102,13 @@ a:visited {
   color: black;
 }
 
-.header-nav a:hover,
-.nav-active,
-.nav-active:visited {
+.header-nav a:hover {
   background-color: #0980a7;
   color: white;
+}
+
+.nav-active {
+  border-bottom: 2px solid #0980a7;
 }
 
 /* main sec */
