@@ -80,11 +80,11 @@
 
 /* home page - blog posts */
 
-.home-posts {
+#home-posts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 0.5rem;
+  row-gap: 2rem;
 }
 
 .home-blog-card {
@@ -159,7 +159,7 @@
     align-self: center;
     column-gap: 3rem;
   }
-  .home-posts {
+  #home-posts {
     width: 60%;
     align-self: center;
   }
