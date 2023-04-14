@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 /* home page banner */
 #hero {
   display: flex;
@@ -10,7 +13,22 @@
   text-align: center;
 }
 
+#hero h1 {
+  font-size: 2rem;
+  font-family: "pacifico", cursive;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#hero em {
+  font-style: normal;
+}
+
 #hero:hover em {
+  /* font-family: "Pacifico", cursive; */
   animation: heroEffect 0.5s forwards;
 }
 
@@ -23,14 +41,16 @@
   }
   to {
     color: #0980a7;
-    font-size: 2rem;
+    font-weight: 700;
+    font-size: 2.2rem;
   }
 }
 
 @keyframes heroEffectBack {
   from {
     color: #0980a7;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 700;
   }
   to {
   }
