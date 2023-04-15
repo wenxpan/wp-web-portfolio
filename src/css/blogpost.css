@@ -1,51 +1,23 @@
-/* blog post page */
-.blog-post-main {
-  margin-top: 0;
-}
+/* blog post banner */
 
-.blog-post-main img {
-  width: 100%;
-}
-
-figcaption {
-  color: grey;
-  font-style: italic;
-  font-size: 0.8rem;
-}
-
-figcaption a {
-  color: grey;
-}
-
-.blog-nav {
-  display: flex;
-  justify-content: space-around;
-  position: sticky;
-  bottom: 0;
-  background-color: #eff1f5;
-  margin-top: 1rem;
-}
-
-.blog-nav a {
-  background: #0e7c7b;
-  color: white;
-  text-decoration: none;
-  padding: 0.2rem 1rem;
-  border-radius: 0.5rem;
-}
-
+/* article layout */
 .blog-post-main article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1rem;
 }
 
-.blog-post-main > p {
-  align-self: flex-start;
+/* remove space around banner image */
+.blog-post-main {
+  margin-top: 0;
 }
 
-/* title banner */
+/* set title size */
+.blog-post-main h1 {
+  font-size: 2rem;
+}
+
+/* banner layout */
 
 section[id^="blog-heading-"] {
   display: flex;
@@ -61,6 +33,7 @@ section[id^="blog-heading-"] * {
   margin: 1rem 0;
 }
 
+/* banner background image */
 #blog-heading-1 {
   background: #00000070
     url("../assets/blog-img/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg") center
@@ -96,27 +69,73 @@ section[id^="blog-heading-"] * {
   background-size: cover;
 }
 
-/* *** TABLET STYLES *** */
+/* blog navbar - prev next back */
+.blog-nav {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0;
+  background-color: #eff1f5;
+  margin-top: 1rem;
+}
+
+.blog-nav a {
+  background: #0980a7;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.blog-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 50rem;
+}
+
+/* left align body text */
+.blog-post-main > p {
+  align-self: flex-start;
+}
+
+/* image same as content width */
+.blog-post-main img {
+  width: 100%;
+}
+
+/* set caption style */
+figcaption {
+  color: grey;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+figcaption a {
+  color: inherit;
+}
+
+/* *** TABLET AND DESKTOP STYLES *** */
 @media only screen and (min-width: 680px) {
-  /* blog post */
+  /* increase spacing for title banner */
   section[id^="blog-heading-"] > * {
     margin: 2rem 0;
   }
 
-  .blog-post-main figure {
-    width: 80%;
+  /* make blog navbar appear closer to each other */
+  .blog-nav {
+    justify-content: center;
   }
 
-  .blog-post-main > article > *:not(section) {
-    width: 80%;
+  .blog-nav a {
+    margin: 0 2rem;
   }
 }
 
-/* *** DESKTOP STYLES *** */
-@media only screen and (min-width: 970px) {
-  /* blog post */
-
-  .blog-post-main > article > *:not(section) {
-    width: 60%;
+@media only screen and (min-width: 680px) {
+  figure {
+    width: 80%;
+    align-self: center;
   }
 }
