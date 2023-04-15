@@ -63,6 +63,11 @@
 
 /* social account list - icons (in home and about) */
 
+.social-list-icons {
+  display: flex;
+  justify-content: center;
+}
+
 .logo-fill {
   display: none;
 }
@@ -137,7 +142,7 @@ a:visited {
   color: white;
 }
 
-/* main sec */
+/* styling main section  */
 body > main {
   display: flex;
   flex-direction: column;

@@ -1,109 +1,96 @@
-/* About page */
+/* *** About page *** */
 
-.social-list-icons img {
-  margin: 0 0.2rem;
-}
-
+/* styling about me article */
 #about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 0.5rem;
+  /* making sure it always stays center within the main container defined in index.css */
+  align-self: center;
 }
 
-#left-content {
+/* styling profile photo, social icons and download button which will be the left column in wider views */
+#left-column {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  align-items: center;
 }
 
-#text-content {
+/* styling main sections which will be the right column in wider views */
+#right-column {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
-  margin-top: 0.5rem;
+  row-gap: 1.5rem;
+  margin-top: 1rem;
+  max-width: 55rem;
+  align-items: center;
 }
 
-#my-skills {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 0.5rem;
-  width: 100%;
+#right-column section h2 {
+  margin-bottom: 1rem;
+  /* headings will align center in mobile view */
+  text-align: center;
 }
 
-#my-skills div img {
-  width: 10vw;
-  max-width: 80px;
+#right-column p {
+  line-height: 1.5;
 }
 
-#my-skills div {
+/* styling skills table */
+#skills-table {
   display: flex;
   flex-wrap: wrap;
   row-gap: 1.5rem;
-  /* justify-content: flex-start;
-  align-items: flex-start; */
+  margin-top: 1rem;
+  justify-content: center;
+  /* align figcaption */
+  align-items: flex-end;
 }
 
-#my-skills div figure {
+#skills-table figure {
   text-align: center;
   margin: 0 0.3rem;
 }
 
-#about-page .button {
-  align-self: center;
+#skills-table img {
+  width: 10vw;
+  max-width: 80px;
 }
 
-/* *** TABLET STYLES *** */
-@media only screen and (min-width: 680px) {
-  /* resize about me */
+#skills-table figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* *** TABLET AND DESKTOP STYLES *** */
+/* as it does not look good to have 2 columns on narrow screens, there is only one media query for this page  */
+@media only screen and (min-width: 780px) {
+  /* resize about me; split into 2 columns */
   #about-me {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 2rem;
+    align-items: flex-start;
   }
 
-  #about-me h1,
-  #about-me .social-list-icons {
-    width: 100%;
-  }
-
-  #left-content {
+  /* set flex basis for 2 columns */
+  #left-column {
     flex: 1;
-    align-self: flex-start;
   }
 
-  #text-content {
+  #right-column {
     flex: 8;
+    align-items: flex-start;
   }
 
-  #about-me h1,
-  #about-me .social-list-icons {
-    text-align: center;
+  /* headings and skill table will align to column left */
+  #right-column section h2 {
+    text-align: start;
   }
 
-  /* resize about my skills */
-  #my-skills img {
-    width: 8vw;
-  }
-
-  #my-skills {
-    flex: 5;
-  }
-}
-/* *** DESKTOP STYLES *** */
-@media only screen and (min-width: 970px) {
-  /* about page */
-  /* .my-skills, */
-  #about-me {
-    align-self: center;
-  }
-
-  #my-skills {
-    width: 80%;
-    justify-self: flex-end;
-  }
-  #my-skills img {
-    width: 6vw;
+  #skills-table {
+    justify-content: flex-start;
   }
 }

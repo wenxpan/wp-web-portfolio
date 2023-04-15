@@ -4,7 +4,7 @@
   /* aspect-ratio: 1 / 1; 
 }*/
 
-.main-slide {
+.slider {
   width: clamp(10rem, 100%, 30rem);
   aspect-ratio: 1 / 1;
   overflow: hidden;

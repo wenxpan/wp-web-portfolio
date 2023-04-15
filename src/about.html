@@ -27,6 +27,7 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
+    <!-- page intro -->
     <section class="intro">
       <h1>About me</h1>
       <p>
@@ -35,9 +36,10 @@
         with me on social media!
       </p>
     </section>
-    <main id="about-page">
+    <main>
       <article id="about-me">
-        <div id="left-content">
+        <!-- left column wrapper -->
+        <div id="left-column">
           <img class="profile" src="assets/avatar.png" alt="profile" />
           <nav class="social-list-icons">
             <a href="https://github.com/wenxuan-pan" target="_blank"
@@ -78,7 +80,9 @@
             >View resume (PDF)</a
           >
         </div>
-        <div id="text-content">
+        <!-- right column wrapper -->
+        <div id="right-column">
+          <!-- section 1: coding experiences -->
           <section>
             <h2>Coding experiences</h2>
             <p>
@@ -91,13 +95,14 @@
               pursue frontend web development as my next career.
             </p>
           </section>
-          <section id="my-skills">
+          <!-- section 2: skills -->
+          <section>
             <h2>My skills</h2>
             <p>
               Here's a list of skills that I aim to achieve when I graduate from
               Coder Academy:
             </p>
-            <div>
+            <div id="skills-table">
               <figure>
                 <img src="assets/html_logo.svg" alt="html-logo" />
                 <figcaption>HTML</figcaption>
@@ -148,6 +153,7 @@
               </figure>
             </div>
           </section>
+          <!-- section 3: past experiences -->
           <section>
             <h2>Past experiences</h2>
             <p>
@@ -162,6 +168,7 @@
               to pursue coding.
             </p>
           </section>
+          <!-- section 4: interests -->
           <section>
             <h2>Interests</h2>
             <p>
@@ -172,21 +179,20 @@
               my mind.
             </p>
           </section>
-          <!-- slider -->
-          <!-- <div class="slider-container"> -->
-          <div class="main-slide" id="cat-pics">
-            <!-- buttons -->
+          <!-- section 5: image slideshow -->
+          <div class="slider" id="cat-pics">
+            <!-- radio buttons for css states; will not display -->
             <input type="radio" name="pic" id="pic1" checked />
             <input type="radio" name="pic" id="pic2" />
             <input type="radio" name="pic" id="pic3" />
             <input type="radio" name="pic" id="pic4" />
+            <!-- label buttons -->
             <div class="labels">
               <label for="pic1"></label>
               <label for="pic2"></label>
               <label for="pic3"></label>
               <label for="pic4"></label>
             </div>
-            <!-- buttons end -->
             <!-- images -->
             <div class="image-list">
               <figure class="slide s1">
@@ -196,29 +202,19 @@
               <figure class="slide">
                 <img src="assets/jojo-arabic.jpg" />
                 <figcaption>
-                  Jojo trying to learn Arabic (but gets distracted)
+                  Jojo trying to learn Arabic (but got distracted)
                 </figcaption>
               </figure>
               <figure class="slide">
                 <img src="assets/jojo-yakuza.jpg" />
-                <figcaption>
-                  Jojo watching me play the game: Yakuza 0
-                </figcaption>
+                <figcaption>Jojo watching playthrough: Yakuza 0</figcaption>
               </figure>
               <figure class="slide">
                 <img src="assets/jojo-jigsaw.jpg" />
                 <figcaption>Jojo chilling on the puzzle mat</figcaption>
               </figure>
-              <!-- images end -->
-            </div>
-            <div class="navigation">
-              <label class="bar" for="slide1"></label>
-              <label class="bar" for="slide2"></label>
-              <label class="bar" for="slide3"></label>
-              <label class="bar" for="slide4"></label>
             </div>
           </div>
-          <!-- </div> -->
         </div>
       </article>
     </main>
