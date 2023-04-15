@@ -80,10 +80,6 @@
   font-size: 2rem;
 }
 
-.intro p {
-  font-size: 1.2rem;
-}
-
 .intro {
   display: flex;
   flex-direction: column;
@@ -91,9 +87,14 @@
   justify-content: center;
   text-align: center;
   row-gap: 1rem;
-  /* margin: 0 2rem; */
-  max-width: 55rem;
+  padding: 1rem 0;
   align-self: center;
+  background-color: #eff1f5;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 55rem;
 }
 
 /* *** SECTIONS FOR ALL PAGES *** */
