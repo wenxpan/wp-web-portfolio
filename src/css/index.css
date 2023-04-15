@@ -5,6 +5,10 @@
   font-family: Noto Sans, sans-serif;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 /* *** REUSABLE COMPONENTS *** */
 
 /* logo */
@@ -41,7 +45,7 @@
 }
 
 .btn-dark:hover {
-  padding: 0.5rem 5rem;
+  padding: 0.5rem 3rem;
 }
 
 .btn-light {
@@ -70,6 +74,25 @@
 
 .social-list-icons a:hover .logo-line {
   display: none;
+}
+
+/* intro section on main pages */
+.intro h1 {
+  font-size: 2rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  row-gap: 1rem;
+  margin: 0 2rem;
 }
 
 /* *** SECTIONS FOR ALL PAGES *** */
