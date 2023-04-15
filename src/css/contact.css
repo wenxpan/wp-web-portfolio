@@ -1,11 +1,4 @@
-.contact-intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 1rem;
-  text-align: center;
-}
-
+/* social accounts list */
 .social-list-full {
   display: flex;
   flex-direction: column;
@@ -18,7 +11,7 @@
   gap: 0.5rem;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: #141414;
 }
 
 .social-list-full a:hover .logo-fill {
@@ -29,7 +22,7 @@
   display: none;
 }
 
-/* contact page - form */
+/* contact form */
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -42,20 +35,20 @@ form {
   flex-direction: column;
   align-self: center;
   gap: 0.5rem;
-  /* width: 100%; */
+  max-width: 75rem;
+  width: 100%;
 }
-
+/* submit button */
 form .button {
   border: none;
   align-self: center;
 }
 
+/* required * */
 form em {
   color: red;
   font-style: normal;
 }
-
-/* TODO: make textarea responsive */
 
 textarea {
   resize: none;
@@ -68,8 +61,7 @@ input {
 
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 680px) {
-  /* contact page */
-
+  /* form labels appear to the left of the field */
   form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -86,6 +78,7 @@ input {
   form textarea {
     grid-column: span 2;
   }
+  /* make submit button appear center last line */
   form .button {
     grid-column: 2;
     margin-top: 1rem;
@@ -94,7 +87,7 @@ input {
 }
 /* *** DESKTOP STYLES *** */
 @media only screen and (min-width: 970px) {
-  /* contact page */
+  /* restrict form width and split into 2 columns */
   form {
     width: 70%;
     grid-template-columns: repeat(6, 1fr);
@@ -103,6 +96,8 @@ input {
   form label {
     margin-right: 1rem;
   }
+
+  /* message field will stay take up who line */
   form textarea {
     grid-column: span 5;
   }
