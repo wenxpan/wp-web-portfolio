@@ -1,12 +1,14 @@
-.blog-list {
+/* blog card list */
+#blog-list {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  max-width: 120rem;
+  align-self: center;
 }
 
-.blog-list a {
+#blog-list a {
   text-decoration: none;
-  color: black;
 }
 
 /* blog page cards */
@@ -22,11 +24,13 @@
   transition: 0.8s;
 }
 
+/* set shape for card cover */
 .blog-post-card img {
   width: 100%;
   border-radius: 0.5rem;
 }
 
+/* set left right padding for card excluding cover */
 .blog-post-card > *:not(.image-area) {
   padding: 0 1rem;
 }
@@ -37,6 +41,7 @@
   width: 100%;
 }
 
+/* show image filter and view button when hovered to the card*/
 .prompt-view {
   position: absolute;
   top: 0;
@@ -61,7 +66,6 @@
 }
 
 .blog-post-card:hover .prompt-view p {
-  /* background-color: rgba(8, 51, 245, 0.672); */
   background: #0980a790;
   color: white;
 }
@@ -70,57 +74,37 @@
   background-color: #add8e660;
 }
 
-/* .blog-post-card:hover .prompt-view {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 0.5rem;
-} */
-
-/* .blog-post-card:hover .prompt-view p {
-  background-color: rgba(0, 0, 0, 0.672);
-  border-radius: 50%;
-  font-size: 2rem;
-  color: white;
-  padding: 1rem;
-} */
-
 .blog-post-card:hover {
   box-shadow: 8.6px 7.1px 19px -11px rgba(0, 0, 0, 0.065),
     36px 30px 45px -11px rgba(0, 0, 0, 0.13);
 }
 
+/* align published dates to end */
 .blog-post-card > p {
   align-self: flex-end;
 }
 
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 680px) {
-  /* blog page */
-  .blog-list {
+  /* display grids to achieve the same height for all cards */
+  #blog-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
-  .blog-list img {
+  #blog-list img {
     height: 30vw;
+    max-height: 20rem;
     object-fit: cover;
   }
 }
 /* *** DESKTOP STYLES *** */
 @media only screen and (min-width: 970px) {
-  /* blog page */
-  .blog-list {
+  #blog-list {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .blog-list img {
+  #blog-list img {
     height: 20vw;
     object-fit: cover;
   }
