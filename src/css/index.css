@@ -3,10 +3,7 @@
   padding: 0;
   margin: 0;
   font-family: Noto Sans, sans-serif;
-}
-
-h1 {
-  font-size: 2rem;
+  color: #141414;
 }
 
 /* *** REUSABLE COMPONENTS *** */
@@ -32,12 +29,12 @@ h1 {
   border-radius: 0.5rem;
   display: inline-block;
   min-width: 8rem;
-  transition: 0.4s;
 }
 
 .btn-dark {
   background: #0980a7;
   color: white;
+  transition: 0.4s;
 }
 
 .btn-dark:visited {
@@ -51,6 +48,7 @@ h1 {
 .btn-light {
   color: #07271e;
   background-color: #eff1f5;
+  transition: 0.2s;
 }
 
 .btn-light:visited {
@@ -62,12 +60,12 @@ h1 {
   color: white;
 }
 
-/* social icon list */
+/* social account list - icons (in home and about) */
 
 .logo-fill {
   display: none;
 }
-
+/* swap logos when hovered */
 .social-list-icons a:hover .logo-fill {
   display: inline-block;
 }

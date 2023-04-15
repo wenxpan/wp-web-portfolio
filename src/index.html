@@ -35,8 +35,8 @@
     </section>
     <!-- main content -->
     <main>
-      <!-- about me -->
-      <section class="home-about-me">
+      <!-- about me section -->
+      <section id="home-about">
         <h2>3 things about me</h2>
         <nav class="social-list-icons">
           <a href="https://github.com/wenxuan-pan" target="_blank"
@@ -71,7 +71,6 @@
           /></a>
         </nav>
         <img class="profile" src="assets/avatar.png" alt="profile" />
-
         <ol>
           <li>
             I am a current sutdent at Coder Academy, learning to become a
@@ -81,37 +80,42 @@
           <li>Before that, I was a translator and project manager.</li>
           <li>I love cats and video games!</li>
         </ol>
+        <!-- empty div for manipulating flexbox layout -->
         <div class="break"></div>
         <a href="about.html" class="button btn-light">Learn more about me</a>
       </section>
-      <!-- my projects -->
-      <section class="home-project">
+      <!-- featured projects section -->
+      <section id="home-project">
         <h2>Featured projects</h2>
         <section>
-          <img src="assets/project_portfolio.png" alt="blog-post-cover" />
+          <img
+            src="assets/project_portfolio.png"
+            alt="project screenshot - my web portfolio"
+          />
           <h3>My web portfolio</h3>
           <p><em>CSS, html</em></p>
           <a href="projects.html#project1" class="button btn-light">See more</a>
         </section>
         <section>
-          <img src="assets/project_quizme.png" alt="blog-post-cover" />
+          <img
+            src="assets/project_quizme.png"
+            alt="project screenshot - Quiz me"
+          />
           <h3>Quiz me: a trivia app</h3>
           <p><em>CSS, html, javascript, react, API</em></p>
           <a href="projects.html#project3" class="button btn-light">See more</a>
         </section>
       </section>
-      <!-- my blog posts -->
-      <section id="home-posts">
+      <!-- recent posts section -->
+      <section id="home-blog">
         <h2>Recent posts</h2>
         <a href="blogs/blog1.html" class="home-blog-card"
-          ><h3 class="home-blog-title">
-            5 dos and don'ts for building multilingual websites
-          </h3>
-          <p class="home-blog-date">11/04/2023</p></a
+          ><h3>5 dos and don'ts for building multilingual websites</h3>
+          <p>11/04/2023</p></a
         >
         <a href="blogs/blog2.html" class="home-blog-card"
-          ><h3 class="home-blog-title">Wireframing 101: what, why, how</h3>
-          <p class="home-blog-date">05/04/2023</p></a
+          ><h3>Wireframing 101: what, why, how</h3>
+          <p>05/04/2023</p></a
         >
         <a href="blog.html" class="button btn-light">See more posts</a>
       </section>

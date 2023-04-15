@@ -1,20 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-/* home page banner */
+/* *** home page - hero banner *** */
+
 #hero {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   padding: 2rem;
   background: #eff1f5;
-  background-size: cover;
   text-align: center;
 }
 
 #hero h1 {
-  font-size: 2rem;
   font-family: "pacifico", cursive;
+  font-size: 2rem;
 }
 
 #hero p {
@@ -22,20 +21,13 @@
   font-weight: 600;
 }
 
+/* add animation to name initials */
 #hero em {
   font-style: normal;
+  animation: heroExpand 1s forwards;
 }
 
-#hero:hover em {
-  /* font-family: "Pacifico", cursive; */
-  animation: heroEffect 0.5s forwards;
-}
-
-#hero:not(hover) em {
-  animation: heroEffectBack 0.5s backwards;
-}
-
-@keyframes heroEffect {
+@keyframes heroExpand {
   from {
   }
   to {
@@ -45,22 +37,15 @@
   }
 }
 
-@keyframes heroEffectBack {
-  from {
-    color: #0980a7;
-    font-size: 2.2rem;
-    font-weight: 700;
-  }
-  to {
-  }
-}
-
+/* add margin for CTA button */
 #hero .button {
   margin-top: 1rem;
 }
 
-/* Home page - about me section */
-.home-about-me {
+/* *** Home page - about me section *** */
+
+/* styling outer container */
+#home-about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,24 +53,34 @@
   row-gap: 0.5rem;
 }
 
-.home-about-me ol {
+/* styling text content */
+#home-about ol {
+  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  margin-left: 1rem;
+  /* restricting width of text content so that it doesn't expand too wide*/
+  max-width: 40rem;
 }
 
-.home-about-me .button {
+/* push list marker inside container */
+#home-about ol li {
+  margin-left: 1.5rem;
+}
+
+/* styling see more button */
+#home-about .button {
   align-self: center;
+  margin-top: 1rem;
 }
 
+/* empty line break prepared for flexbox row layout in media queries; hidden in mobile view */
 .break {
-  flex: 100%;
-  height: 0;
+  display: none;
 }
 
-/* home page - featured projects */
-.home-project {
+/* *** home page - featured projects *** */
+#home-project {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +88,8 @@
   row-gap: 2rem;
 }
 
-.home-project section {
+/* styling project cards */
+#home-project section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,19 +99,21 @@
   transition: 0.8s;
 }
 
-.home-project section:hover {
-  box-shadow: 8.6px 7.1px 19px -11px rgba(0, 0, 0, 0.065),
-    36px 30px 45px -11px rgba(0, 0, 0, 0.13);
-}
-
-.home-project section img {
+/* project card image */
+#home-project section img {
   width: 100%;
   border-radius: 1rem;
 }
 
-/* home page - blog posts */
+/* hover card effect */
+#home-project section:hover {
+  box-shadow: 8.6px 7.1px 19px -11px rgba(0, 0, 0, 0.065),
+    36px 30px 45px -11px rgba(0, 0, 0, 0.13);
+}
 
-#home-posts {
+/* *** home page - blog posts *** */
+
+#home-blog {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,79 +123,98 @@
 .home-blog-card {
   text-decoration: none;
   color: black;
-  align-self: flex-start;
   width: 100%;
+  /* prepare for background hover effect */
+  transition: 0.2s;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.home-blog-card:hover {
-  text-decoration: underline;
-}
-
-.home-blog-date {
+/* right align published dates */
+.home-blog-card > p {
   text-align: end;
 }
 
-#home-posts h3::after {
-  content: url(../assets/arrow_right_fill.svg);
+/* add background color and '>' to indicate the hovered element is a clickable link */
+.home-blog-card:hover {
+  background-color: #add8e670;
+}
+
+.home-blog-card:hover h3::after {
+  content: ">";
   display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
-  margin-left: 5px;
-  color: inherit;
+  margin-left: 1rem;
 }
 
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 680px) {
-  /* resize about me */
-  .home-about-me {
+  /* *** resize about section *** */
+
+  /* change section from column to row layout */
+  #home-about {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 2rem;
   }
 
-  .home-about-me h2,
-  .home-about-me .social-list-icons {
-    width: 100%;
+  /* section heading and social account list will stay on separate lines */
+  #home-about h2,
+  #home-about .social-list-icons {
+    flex: 100%;
     text-align: center;
   }
 
+  /* put profile image and text content on the same row and define ratios */
   .profile {
     flex: 1;
   }
 
-  .home-about-me ol {
+  #home-about ol {
     flex: 5;
   }
 
-  /* resize home projects */
-  .home-project {
+  /* display empty break so that button can start on a new line */
+  .break {
+    display: block;
+    flex: 100%;
+    height: 0;
+  }
+
+  /* *** resize projects section *** */
+
+  /* project cards display in a row */
+  #home-project {
     flex-wrap: wrap;
     flex-direction: row;
     column-gap: 1.5rem;
   }
 
-  .home-project h2 {
-    width: 100%;
+  /* heading stays on one line */
+  #home-project h2 {
+    flex: 100%;
   }
 
-  .home-project section {
+  /* even distribution for each card */
+  #home-project section {
     flex: 1;
   }
 }
 
 /* *** DESKTOP STYLES *** */
 @media only screen and (min-width: 970px) {
-  /* home page */
-  .home-about-me {
+  /* add more margin to main section to pages so that it doesn't look weird */
+  #home-about,
+  #home-project {
     width: 80%;
     align-self: center;
   }
-  .home-project {
-    width: 80%;
-    align-self: center;
+  /* increase gap between project cards */
+  #home-project {
     column-gap: 3rem;
   }
-  #home-posts {
+
+  /* wider margin for blog posts so that titles are not far away from published date */
+  #home-blog {
     width: 60%;
     align-self: center;
   }
