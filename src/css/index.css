@@ -16,10 +16,11 @@
 
 /* profile image */
 .profile {
-  width: 40vw;
+  /* width: 40vw;
   min-width: 200px;
-  max-width: 300px;
+  max-width: 300px; */
   border-radius: 50%;
+  width: clamp(200px, 40vw, 250px);
 }
 
 /* buttons */
@@ -90,7 +91,9 @@
   justify-content: center;
   text-align: center;
   row-gap: 1rem;
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
+  max-width: 55rem;
+  align-self: center;
 }
 
 /* *** SECTIONS FOR ALL PAGES *** */

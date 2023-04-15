@@ -1,0 +1,92 @@
+/* *** slider *** */
+/* .slide-container {
+  width: 100%;
+  /* aspect-ratio: 1 / 1; 
+}*/
+
+.main-slide {
+  width: clamp(10rem, 100%, 30rem);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.image-list {
+  width: 500%;
+  display: flex;
+  height: inherit;
+  position: relative;
+  transition: 1s;
+}
+
+.slide {
+  width: 20%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.slide figcaption {
+  z-index: 2;
+  background-color: #0980a7;
+  color: #eff1f5;
+  font-style: italic;
+  position: absolute;
+  text-align: center;
+  bottom: 0%;
+  width: 100%;
+  padding: 0.5rem 0 1rem 0;
+}
+
+/* change radio button style */
+
+.labels {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem;
+  justify-content: center;
+  background-color: #0980a780;
+}
+
+input {
+  display: none;
+}
+
+.labels label {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid #eff1f5;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+/* change radio button checked style */
+input[id="pic1"]:checked ~ .labels label[for="pic1"],
+input[id="pic2"]:checked ~ .labels label[for="pic2"],
+input[id="pic3"]:checked ~ .labels label[for="pic3"],
+input[id="pic4"]:checked ~ .labels label[for="pic4"] {
+  background-color: #eff1f5;
+}
+
+input[id="pic1"]:checked ~ .image-list {
+  transform: translate(0);
+}
+
+input[id="pic2"]:checked ~ .image-list {
+  transform: translate(-20%);
+}
+input[id="pic3"]:checked ~ .image-list {
+  transform: translate(-40%);
+}
+input[id="pic4"]:checked ~ .image-list {
+  transform: translate(-60%);
+}

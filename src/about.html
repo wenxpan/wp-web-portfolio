@@ -7,6 +7,7 @@
     <title>Wenxuan Pan - About</title>
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/slider.css" />
     <link rel="icon" type="image/svg" href="./assets/WP_logo_dark.svg" />
   </head>
   <body>
@@ -30,8 +31,9 @@
       <section class="intro">
         <h1>About me</h1>
         <p>
-          Get to know my education and experiences, view my resume, or connect
-          with me on social media!
+          Hello! I'm Wenxuan Pan, and I'm currently a student at Coder Academy.
+          Get to know my past experiences, view my resume, and connect with me
+          on social media!
         </p>
       </section>
       <article id="about-me">
@@ -78,53 +80,22 @@
         </div>
         <div id="text-content">
           <section>
-            <h2>heading for my area</h2>
+            <h2>Coding experiences</h2>
             <p>
-              Hello! I'm a sutdent in Diploma of Information Technology at Coder
-              Academy. Expected to become a fullstack web developer in Sep 2023.
-            </p>
-            <p>
-              Before that, I was a translator and project manager. Loves cats
-              and video games.
-            </p>
-          </section>
-          <section>
-            <h2>heading for my area</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              laudantium corrupti maxime, ratione, quam natus totam dolorum
-              dolore repellat minima nemo dicta. Autem recusandae quaerat hic
-              non odio soluta iure minima esse, reprehenderit dignissimos
-              tempore similique veniam nemo sequi ducimus blanditiis numquam
-              temporibus accusamus sit impedit distinctio aliquid. Quaerat,
-              earum!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              laudantium corrupti maxime, ratione, quam natus totam dolorum
-              dolore repellat minima nemo dicta. Autem recusandae quaerat hic
-              non odio soluta iure minima esse, reprehenderit dignissimos
-              tempore similique veniam nemo sequi ducimus blanditiis numquam
-              temporibus accusamus sit impedit distinctio aliquid. Quaerat,
-              earum!
-            </p>
-          </section>
-          <section>
-            <h2>heading for my area</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              laudantium corrupti maxime, ratione, quam natus totam dolorum
-              dolore repellat minima nemo dicta. Autem recusandae quaerat hic
-              non odio soluta iure minima esse, reprehenderit dignissimos
-              tempore similique veniam nemo sequi ducimus blanditiis numquam
-              temporibus accusamus sit impedit distinctio aliquid. Quaerat,
-              earum!
+              I am currently study Diploma of Information Technology at Coder
+              Academy, and I am expected to graduate in Sep 2023. Before
+              enrolling in the bootcamp, I had watched some online tutorials on
+              frontend skills, and I found myself interested in them. I enjoyed
+              experimenting with various languages and found the process to be
+              both challenging and rewarding; and thus I became determined to
+              pursue frontend web development as my next career.
             </p>
           </section>
           <section id="my-skills">
             <h2>My skills</h2>
             <p>
-              Here's a list of skills that I aim to achieve when I graduate:
+              Here's a list of skills that I aim to achieve when I graduate from
+              Coder Academy:
             </p>
             <div>
               <figure>
@@ -177,6 +148,77 @@
               </figure>
             </div>
           </section>
+          <section>
+            <h2>Past experiences</h2>
+            <p>
+              I previously worked as a project manager and translator at a
+              translation company in Melbourne. During my time there, I had the
+              opportunity to collaborate with client developers and upload
+              website translations via various CMS platforms. This experience
+              made me realize the challenges that multilingual websites face,
+              such as layout and typography issues. As someone who is passionate
+              about language and culture, I wanted to make the web a more
+              accessible place for people from diverse backgrounds, which led me
+              to pursue coding.
+            </p>
+          </section>
+          <section>
+            <h2>Interests</h2>
+            <p>
+              In my free time, I enjoy reading books, tackling jigsaw puzzles,
+              playing video games, and spending quality time with my cat Jojo. I
+              am an indoor person, but I also enjoy hiking and immersing myself
+              in nature, as it helps me reconnect with the environment and clear
+              my mind.
+            </p>
+          </section>
+          <!-- slider -->
+          <!-- <div class="slider-container"> -->
+          <div class="main-slide" id="cat-pics">
+            <!-- buttons -->
+            <input type="radio" name="pic" id="pic1" checked />
+            <input type="radio" name="pic" id="pic2" />
+            <input type="radio" name="pic" id="pic3" />
+            <input type="radio" name="pic" id="pic4" />
+            <div class="labels">
+              <label for="pic1"></label>
+              <label for="pic2"></label>
+              <label for="pic3"></label>
+              <label for="pic4"></label>
+            </div>
+            <!-- buttons end -->
+            <!-- images -->
+            <div class="image-list">
+              <figure class="slide s1">
+                <img src="assets/jojo-css.jpg" />
+                <figcaption>Jojo sneak peeking the world of css</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="assets/jojo-arabic.jpg" />
+                <figcaption>
+                  Jojo trying to learn Arabic (but gets distracted)
+                </figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="assets/jojo-yakuza.jpg" />
+                <figcaption>
+                  Jojo watching me play the game: Yakuza 0
+                </figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="assets/jojo-jigsaw.jpg" />
+                <figcaption>Jojo chilling on the puzzle mat</figcaption>
+              </figure>
+              <!-- images end -->
+            </div>
+            <div class="navigation">
+              <label class="bar" for="slide1"></label>
+              <label class="bar" for="slide2"></label>
+              <label class="bar" for="slide3"></label>
+              <label class="bar" for="slide4"></label>
+            </div>
+          </div>
+          <!-- </div> -->
         </div>
       </article>
     </main>
