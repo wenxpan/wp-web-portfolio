@@ -130,8 +130,9 @@ a:visited {
   color: white;
 }
 
-.nav-active {
-  border-bottom: 2px solid #0980a7;
+#nav-active {
+  background: #0980a7;
+  color: white;
 }
 
 /* main sec */
