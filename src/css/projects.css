@@ -1,31 +1,23 @@
-.project-intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 1rem;
-  text-align: center;
-}
-
+/* styling project card list */
 .project-list {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 
+/* styling project card */
 .project-list section {
+  max-width: 40rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 1rem;
-  border-radius: 1rem;
   padding-bottom: 1rem;
   text-align: center;
   transition: 0.8s;
-  margin-bottom: auto;
-}
-.project-list section:hover {
-  box-shadow: 8.6px 7.1px 19px -11px rgba(0, 0, 0, 0.065),
-    36px 30px 45px -11px rgba(0, 0, 0, 0.13);
 }
 
 .project-list section img {
@@ -33,23 +25,33 @@
   border-radius: 0.5rem;
 }
 
-.project-list section *:not(img, a) {
+/* add drop shadow effect when hovering project card */
+.project-list section:hover {
+  box-shadow: 8.6px 7.1px 19px -11px rgba(0, 0, 0, 0.065),
+    36px 30px 45px -11px rgba(0, 0, 0, 0.13);
+}
+
+/* set left right padding for card excluding cover and button */
+.project-list section *:not(img, .button) {
   padding: 0 1rem;
 }
 
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 680px) {
-  /* resize project page */
+  /* cards display in 2 rows */
   .project-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project-list section {
+    flex: 48%;
   }
 }
 /* *** DESKTOP STYLES *** */
 @media only screen and (min-width: 970px) {
-  /* project page */
-  .project-list {
-    grid-template-columns: repeat(3, 1fr);
+  /* cards display in 3 rows or more */
+  .project-list section {
+    flex: 33.3%;
   }
 }
