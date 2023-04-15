@@ -45,7 +45,8 @@
 /* *** Home page - about me section *** */
 
 /* styling outer container */
-#home-about {
+#home-about,
+#home-about .row-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,6 +60,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  row-gap: 0.7rem;
 }
 
 /* push list marker inside container */
@@ -82,6 +84,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   row-gap: 2rem;
 }
@@ -95,6 +98,7 @@
   border-radius: 1rem;
   padding-bottom: 1rem;
   transition: 0.8s;
+  max-width: 40rem;
 }
 
 /* project card image */
@@ -147,26 +151,16 @@
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 680px) {
   /* *** resize about section *** */
-
   /* change section from column to row layout */
-  #home-about {
+  /* #home-about {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 2rem;
-  }
+  } */
 
-  /* section heading and social account list will stay on separate lines */
-  #home-about h2,
-  #home-about .social-list-icons {
-    flex: 100%;
-    text-align: center;
-  }
-
-  /* display empty break so that button can start on a new line */
-  .break {
-    display: block;
-    flex: 100%;
-    height: 0;
+  #home-about .row-wrapper {
+    flex-direction: row;
+    column-gap: 2rem;
   }
 
   /* *** resize projects section *** */
