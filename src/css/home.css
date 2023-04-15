@@ -58,9 +58,7 @@
   font-size: 1.1rem;
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
-  /* restricting width of text content so that it doesn't expand too wide*/
-  max-width: 40rem;
+  margin-top: 1rem;
 }
 
 /* push list marker inside container */
@@ -162,15 +160,6 @@
   #home-about .social-list-icons {
     flex: 100%;
     text-align: center;
-  }
-
-  /* put profile image and text content on the same row and define ratios */
-  .profile {
-    flex: 1;
-  }
-
-  #home-about ol {
-    flex: 5;
   }
 
   /* display empty break so that button can start on a new line */

@@ -20,7 +20,7 @@
   min-width: 200px;
   max-width: 300px; */
   border-radius: 50%;
-  width: clamp(200px, 40vw, 250px);
+  width: clamp(200px, 40vw, 300px);
 }
 
 /* buttons */
@@ -87,7 +87,7 @@
   justify-content: center;
   text-align: center;
   row-gap: 1rem;
-  padding: 1rem 0;
+  padding: 1rem 2rem 2rem;
   align-self: center;
   background-color: #eff1f5;
 }
