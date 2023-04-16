@@ -2,9 +2,22 @@
 
 ## Links
 
-- Deployed Website
-- Github Repo
+- [Deployed Website - Vercel](https://wenxuan-pan-portfolio.vercel.app/)
+- [Github Repo](https://github.com/wenxuan-pan/WenxuanPan_T1A2)
 - Slide deck presentation
+
+## Folder structure
+
+- `WenxuanPan_T1A2` - root folder
+  - `README.md` - readme documentation
+  - `docs` - folder containing files linked by `README.md`
+    - `docs/Screenshots` - folder containing screenshots of the website
+    - `docs/Wireframes` - folder containing screenshots of wireframes
+  - `ppt` - folder containing the slide deck of my presentation
+  - `src` - source code for this project
+    - `src/assets` - images, icons and PDF used in the portfolio website
+    - `src/blogs` - html docs for 5 blog posts
+    - `src/css` - css files for this project
 
 ## Description
 
@@ -26,31 +39,58 @@ This website
 
 ## Wireframes
 
-### Home
+### 1. Home
 
 ![Wireframe - Homepage](docs/Wireframes/Home.png)
 
-### About
+### 2. About
 
 ![Wireframe - About](docs/Wireframes/About.png)
 
-### Projects
+### 3. Projects
 
 ![Wireframe - Projects](docs/Wireframes/Projects.png)
 
-### Blog
+### 4. Blog
 
 ![Wireframe - Blog](docs/Wireframes/Blog.png)
 
-### Blog posts
+### 5. Blog posts
 
 ![Wireframe - Blog posts](docs/Wireframes/blog-post.png)
 
-### Contact
+### 6. Contact
 
 ![Wireframe - Contact](docs/Wireframes/Contact.png)
 
 ## Website Screenshots
+
+### Mobile view
+
+![Screenshot - Mobile](docs/Screenshots/mobile-view.png)
+
+### Tablet view
+
+![Screenshot - Tablet](docs/Screenshots/tablet-view.png)
+
+### Desktop view
+
+![Screenshot - Desktop](docs/Screenshots/desktop-view.png)
+
+_Note: Jump to Appendix section to view all screenshots_
+
+## Tech stack and reference sites
+
+- HTML, CSS - I used these languages to build my website
+- [Vercel](https://vercel.com/) - I used this as my deployment platform
+- [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) I used this to check my html codes
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) I used this to check my css codes
+- [Figma](https://www.figma.com/) - I used this to create sitemap, my logo and project previews
+- [Balsamiq](https://balsamiq.cloud/) - I used this to create my wireframes
+- [Smooth Shadow](https://shadows.brumm.af/) - I used this to create drop shadow styles
+- [Icons8](https://icons8.com/) and [MingCute Icon](https://www.mingcute.com/) - I downloaded and used icons from these websites
+
+## Appendix
 
 ### Home
 
@@ -87,13 +127,3 @@ This website
 ![Website screenshot - Contact - mobile](docs/Screenshots/contact-mobile.png)
 ![Website screenshot - Contact - tablet](docs/Screenshots/contact-tablet.png)
 ![Website screenshot - Contact - desktop](docs/Screenshots/contact-desktop.png)
-
-## Tech stack and reference sites
-
-- HTML, CSS - I used these languages to build my website
-- [Vercel](https://vercel.com/) - I used this as my deployment platform
-- [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) I used this to check my html codes
-- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) I used this to check my css codes
-- [Figma](https://www.figma.com/) - I used this to create sitemap, my logo and project previews
-- [Balsamiq](https://balsamiq.cloud/) - I used this to create my wireframes
-- [Smooth Shadow](https://shadows.brumm.af/) - I used this to create drop shadow styles
