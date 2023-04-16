@@ -6,11 +6,9 @@
   max-width: 120rem;
   align-self: center;
   align-items: flex-start;
-  /* justify-content: center;
-  align-items: flex-start; */
 }
 
-/* styling project card */
+/* combined component: project card */
 #project-list section {
   /* max-width: 40rem; */
   border-radius: 1rem;
