@@ -35,7 +35,7 @@ form {
   flex-direction: column;
   align-self: center;
   gap: 0.5rem;
-  max-width: 75rem;
+  max-width: 55rem;
   width: 100%;
 }
 /* submit button */
@@ -64,45 +64,33 @@ input {
   /* form labels appear to the left of the field */
   form {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: max-content 1fr;
     row-gap: 1rem;
-  }
-
-  form label {
-    text-align: right;
-    margin-right: 2rem;
-  }
-  form input {
-    grid-column: span 2;
-  }
-  form textarea {
-    grid-column: span 2;
   }
   /* make submit button appear center last line */
   form .button {
-    grid-column: 2;
+    grid-column: span 2;
     margin-top: 1rem;
     justify-self: center;
   }
 }
 /* *** DESKTOP STYLES *** */
-@media only screen and (min-width: 970px) {
-  /* restrict form width and split into 2 columns */
+@media only screen and (min-width: 780px) {
+  /* split into 2 columns */
   form {
-    width: 70%;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, max-content 1fr);
   }
 
   form label {
-    margin-right: 1rem;
+    grid-column: auto;
+  }
+
+  form textarea {
+    grid-column: span 3;
   }
 
   /* message field will stay take up who line */
-  form textarea {
-    grid-column: span 5;
-  }
-
   form .button {
-    grid-column: span 6;
+    grid-column: span 4;
   }
 }
