@@ -131,9 +131,7 @@ figcaption a {
   .blog-nav a {
     margin: 0 2rem;
   }
-}
 
-@media only screen and (min-width: 680px) {
   figure {
     width: 80%;
     align-self: center;
