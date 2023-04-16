@@ -4,7 +4,7 @@
 
 - [Deployed Website - Vercel](https://wenxuan-pan-portfolio.vercel.app/)
 - [Github Repo](https://github.com/wenxuan-pan/WenxuanPan_T1A2)
-- [Slide deck presentation (in progress)](https://youtu.be/1TWBLS0f7Rc)
+- [Slide deck presentation - Youtube](https://youtu.be/1TWBLS0f7Rc)
 
 ## Folder structure
 
