@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+/* css reset and set primary font family and color */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,17 +11,14 @@
 
 /* *** REUSABLE COMPONENTS *** */
 
-/* logo */
+/* graphic component: logo */
 .wp-logo {
   width: 15vw;
   max-width: 50px;
 }
 
-/* profile image */
+/* graphic component: profile image */
 .profile {
-  /* width: 40vw;
-  min-width: 200px;
-  max-width: 300px; */
   border-radius: 50%;
   width: clamp(200px, 40vw, 300px);
 }
@@ -63,7 +61,7 @@
   color: white;
 }
 
-/* social account list - icons (in home and about) */
+/* graphic component: social account list - icons (in home and about) */
 
 .social-list-icons {
   display: flex;
@@ -73,8 +71,9 @@
 .logo-fill {
   display: none;
 }
-/* swap logos when hovered */
+
 .social-list-icons a:hover .logo-fill {
+  /* swap logos when hovered */
   display: inline-block;
 }
 
@@ -82,7 +81,7 @@
   display: none;
 }
 
-/* intro section on main pages */
+/* text component: intro section on main pages */
 .intro h1 {
   font-size: 2rem;
 }
@@ -105,7 +104,7 @@
 }
 
 /* *** SECTIONS FOR ALL PAGES *** */
-/* header */
+/* combined component: header */
 body > header {
   display: flex;
   flex-direction: column;
@@ -116,7 +115,7 @@ body > header {
   background-color: #add8e6;
 }
 
-/* navbar */
+/* text component: navbar */
 .header-nav {
   display: flex;
   flex-direction: column;
@@ -124,14 +123,14 @@ body > header {
 
 .header-nav a {
   text-decoration: none;
-  color: black;
+  color: #141414;
   padding: 0.8rem;
   width: 100vw;
   transition: 0.2s;
 }
 
 a:visited {
-  color: black;
+  color: #141414;
 }
 
 .header-nav a:hover {
@@ -144,14 +143,7 @@ a:visited {
   color: white;
 }
 
-/* styling main section  */
-body > main {
-  display: flex;
-  flex-direction: column;
-  margin: 3rem 1.5rem;
-  row-gap: 3rem;
-}
-/* footer */
+/* combined component: footer */
 body > footer {
   display: flex;
   background-color: #eff1f5;
@@ -160,8 +152,17 @@ body > footer {
   padding: 0.2rem 1rem;
 }
 
+/* styling main section for all pages */
+body > main {
+  /* I added this so that each section under hero or page intro can be divided into chunks and have spaces around */
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 1.5rem;
+  row-gap: 3rem;
+}
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 550px) {
+  /* responsiveness for navbar: columns turning into rows when it gets wider */
   body > header {
     flex-direction: row;
   }
