@@ -139,6 +139,7 @@
   flex-direction: column;
   width: 100%;
   row-gap: 1rem;
+  align-items: center;
 }
 
 /* right align published dates */
@@ -184,14 +185,6 @@
   #home-project section {
     flex: 1;
   }
-
-  /* resize blog section */
-  .blog-container {
-    flex-direction: row;
-    column-gap: 1.5rem;
-    align-items: space-around;
-    justify-content: space-around;
-  }
 }
 
 /* *** DESKTOP STYLES *** */
@@ -207,5 +200,13 @@
   #home-project,
   #home-blog {
     column-gap: 3rem;
+  }
+
+  /* resize blog section */
+  .blog-container {
+    flex-direction: row;
+    column-gap: 1.5rem;
+    align-items: space-around;
+    justify-content: space-around;
   }
 }
