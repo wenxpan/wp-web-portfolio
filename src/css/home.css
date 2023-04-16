@@ -2,6 +2,7 @@
 
 /* *** home page - hero banner *** */
 
+/* text component: hero section */
 #hero {
   display: flex;
   flex-direction: column;
@@ -44,7 +45,7 @@
 
 /* *** Home page - about me section *** */
 
-/* styling outer container */
+/* styling about section and graphic component within it */
 #home-about,
 #home-about .row-wrapper {
   display: flex;
@@ -74,12 +75,8 @@
   margin-top: 1rem;
 }
 
-/* empty line break prepared for flexbox row layout in media queries; hidden in mobile view */
-.break {
-  display: none;
-}
-
 /* *** home page - featured projects *** */
+
 #home-project {
   display: flex;
   flex-direction: column;
@@ -89,7 +86,7 @@
   row-gap: 2rem;
 }
 
-/* styling project cards */
+/* combined component: project cards */
 #home-project section {
   display: flex;
   flex-direction: column;
@@ -101,7 +98,7 @@
   max-width: 40rem;
 }
 
-/* project card image */
+/* graphic component: project card image */
 #home-project section img {
   width: 100%;
   border-radius: 1rem;
@@ -123,6 +120,7 @@
   row-gap: 2rem;
 }
 
+/* text component: blog card */
 .home-blog-card {
   text-decoration: none;
   color: black;
@@ -131,6 +129,7 @@
   transition: 0.2s;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  /* add max width so that title and date doesnt get too far awar */
   max-width: 40rem;
 }
 
@@ -163,13 +162,14 @@
   /* *** resize about section *** */
 
   #home-about .row-wrapper {
+    /* make profile image and list text in one row */
     flex-direction: row;
     column-gap: 2rem;
   }
 
   /* *** resize projects section *** */
 
-  /* project cards display in a row */
+  /* project cards display in one row */
   #home-project {
     flex-wrap: wrap;
     flex-direction: row;
