@@ -1,4 +1,4 @@
-/* social accounts list */
+/* combined comp: social accounts list */
 .social-list-full {
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   display: none;
 }
 
-/* contact form */
+/* text comp: contact form */
 #contact-form {
   display: flex;
   flex-direction: column;
