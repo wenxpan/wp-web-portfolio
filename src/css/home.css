@@ -24,7 +24,7 @@
 /* add animation to name initials */
 #hero em {
   font-style: normal;
-  animation: heroExpand 1s forwards;
+  animation: 1s heroExpand 0.8s forwards;
 }
 
 @keyframes heroExpand {

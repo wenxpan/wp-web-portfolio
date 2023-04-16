@@ -31,7 +31,7 @@ The target audience for the porfolio website is any potential employer and clien
 
 ### Functionality / features
 
-This website
+This website is divided into the following pages:
 
 ## Sitemap
 
