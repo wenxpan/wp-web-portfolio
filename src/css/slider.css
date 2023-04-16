@@ -1,8 +1,4 @@
-/* *** slider *** */
-/* .slide-container {
-  width: 100%;
-  /* aspect-ratio: 1 / 1; 
-}*/
+/* *** graphic component: slider *** */
 
 .slider {
   width: clamp(10rem, 100%, 30rem);

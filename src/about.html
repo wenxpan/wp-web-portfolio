@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg" href="./assets/WP_logo_dark.svg" />
   </head>
   <body>
-    <!-- header section -->
+    <!-- combined component: header section -->
     <header>
       <a href="index.html"
         ><img
@@ -19,6 +19,7 @@
           src="assets/WP_logo_dark.svg"
           alt="Logo - Wenxuan Pan"
       /></a>
+      <!-- text component: navbar -->
       <nav class="header-nav">
         <a href="index.html">Home</a>
         <a href="about.html" id="nav-active">About</a>
@@ -27,7 +28,7 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <!-- page intro -->
+    <!-- text component: page intro -->
     <section class="intro">
       <h1>About me</h1>
       <p>
@@ -38,7 +39,7 @@
     </section>
     <main>
       <article id="about-me">
-        <!-- left column wrapper -->
+        <!-- combined component: profile, social and resume that stays on left column on wider screens-->
         <div id="left-column">
           <img class="profile" src="assets/avatar.png" alt="profile" />
           <nav class="social-list-icons">
@@ -80,9 +81,9 @@
             >View resume (PDF)</a
           >
         </div>
-        <!-- right column wrapper -->
+        <!-- combine component: information that stays on right column in wider screens -->
         <div id="right-column">
-          <!-- section 1: coding experiences -->
+          <!-- text component: section 1: coding experiences -->
           <section>
             <h2>Coding experiences</h2>
             <p>
@@ -95,13 +96,14 @@
               pursue frontend web development as my next career.
             </p>
           </section>
-          <!-- section 2: skills -->
+          <!-- combined component: section 2: skills -->
           <section>
             <h2>My skills</h2>
             <p>
               Here's a list of skills that I aim to achieve when I graduate from
               Coder Academy:
             </p>
+            <!-- combined component: skills table -->
             <div id="skills-table">
               <figure>
                 <img src="assets/html_logo.svg" alt="html-logo" />
@@ -153,7 +155,7 @@
               </figure>
             </div>
           </section>
-          <!-- section 3: past experiences -->
+          <!-- text component: section 3: past experiences -->
           <section>
             <h2>Past experiences</h2>
             <p>
@@ -168,7 +170,7 @@
               to pursue coding.
             </p>
           </section>
-          <!-- section 4: interests -->
+          <!-- text component: section 4: interests -->
           <section>
             <h2>Interests</h2>
             <p>
@@ -179,7 +181,7 @@
               my mind.
             </p>
           </section>
-          <!-- section 5: image slideshow -->
+          <!-- graphic component: section 5: image slideshow -->
           <div class="slider" id="cat-pics">
             <!-- radio buttons for css states; will not display -->
             <input type="radio" name="pic" id="pic1" checked />

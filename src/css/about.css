@@ -10,7 +10,7 @@
   align-self: center;
 }
 
-/* styling profile photo, social icons and download button which will be the left column in wider views */
+/* combined component: profile photo, social icons and download button which will be the left column in wider views */
 #left-column {
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-/* styling main sections which will be the right column in wider views */
+/* combined component: main sections which will be the right column in wider views */
 #right-column {
   display: flex;
   flex-direction: column;
@@ -28,6 +28,7 @@
   align-items: center;
 }
 
+/* graphic/text component sections within right column container */
 #right-column section h2 {
   margin-bottom: 1rem;
   /* headings will align center in mobile view */
@@ -38,7 +39,7 @@
   line-height: 1.5;
 }
 
-/* styling skills table */
+/* combined component: skills table */
 #skills-table {
   display: flex;
   flex-wrap: wrap;
