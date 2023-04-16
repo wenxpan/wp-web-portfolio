@@ -17,7 +17,7 @@
   font-size: 2rem;
 }
 
-/* banner layout */
+/* combined comp: title banner */
 
 section[id^="blog-heading-"] {
   display: flex;
@@ -105,8 +105,9 @@ section[id^="blog-heading-"] * {
   width: 100%;
 }
 
-/* set caption style */
+/* graphic comp: article image  */
 figcaption {
+  /* set caption style */
   color: grey;
   font-style: italic;
   font-size: 0.8rem;
