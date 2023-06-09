@@ -37,36 +37,36 @@ section[id^="blog-heading-"] * {
 /* banner background image */
 #blog-heading-1 {
   background: #00000070
-    url("../assets/blog-img/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg") center
-    no-repeat;
+    url("../assets/blog-img/responsive-0-visual-design-pl9DrjAMV6I-unsplash.jpg")
+    center no-repeat;
   background-size: cover;
 }
 
 #blog-heading-2 {
   background: #00000070
-    url("../assets/blog-img/portfolio-0-hal-gatewood-tZc3vjPCk-Q-unsplash.jpg")
+    url("../assets/blog-img/api-0-douglas-lopes-ehyV_XOZ4iA-unsplash.jpg")
     center no-repeat;
   background-size: cover;
 }
 
 #blog-heading-3 {
   background: #00000070
-    url("../assets/blog-img/alvaro-reyes-qWwpHwip31M-unsplash.jpg") center
-    no-repeat;
+    url("../assets/blog-img/terminal-0-nils-huenerfuerst-E-IQ1nbpzZo-unsplash.jpg")
+    center no-repeat;
   background-size: cover;
 }
 
 #blog-heading-4 {
   background: #00000070
-    url("../assets/blog-img/marvin-meyer-SYTO3xs06fU-unsplash.jpg") center
-    no-repeat;
+    url("../assets/blog-img/slider-0-marvin-meyer-HN1roKF-DS4-unsplash.jpg")
+    center no-repeat;
   background-size: cover;
 }
 
 #blog-heading-5 {
   background: #00000070
-    url("../assets/blog-img/edho-pratama-yeB9jDmHm6M-unsplash.jpg") center
-    no-repeat;
+    url("../assets/blog-img/portfolio-0-ux-store-jJT2r2n7lYA-unsplash.jpg")
+    center no-repeat;
   background-size: cover;
 }
 
