@@ -56,7 +56,7 @@
 }
 
 /* text component: list */
-#home-about ol {
+#home-about ul {
   font-size: 1.1rem;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@
 }
 
 /* push list marker inside container */
-#home-about ol li {
+#home-about ul li {
   margin-left: 1.5rem;
 }
 
