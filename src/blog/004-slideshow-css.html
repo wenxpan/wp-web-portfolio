@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to create a responsive image slider in vanilla css</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/blogpost.css" />
+    <link rel="stylesheet" href="../css/prism.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <link rel="icon" type="image/svg" href="../assets/WP_logo_dark.svg" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <a href="../index.html"
+        ><img
+          class="wp-logo"
+          src="../assets/WP_logo_dark.svg"
+          alt="Logo - Wenxuan Pan"
+      /></a>
+      <nav class="header-nav">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../blog.html" id="nav-active">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="blog-post-main">
+      <!-- combined comp: main content -->
+      <article>
+        <section id="blog-heading-5">
+          <h1>How to create a responsive image slider in vanilla css</h1>
+          <p>15/02/2023</p>
+        </section>
+        <div class="blog-content">
+          <h2>Creating an image slider in html and css</h2>
+          <p>
+            In the world of web development, image sliders are a common feature
+            on many websites, allowing the display of multiple images in a
+            sleek, smooth, and visually appealing manner. They're an effective
+            tool for showcasing products, portfolio pieces, or for adding a
+            dynamic, visual touch to your site.
+          </p>
+          <p>
+            Today, we're going to create an image slider using only HTML and CSS
+            - no JavaScript required!
+          </p>
+          <p>Let's look at the final result first:</p>
+          <p
+            class="codepen"
+            data-height="500"
+            data-default-tab="html,result"
+            data-slug-hash="VwVYyyz"
+            data-editable="true"
+            data-user="rycbar42"
+          >
+            >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/rycbar42/pen/VwVYyyz"> Untitled</a> by
+              Wenxuan Pan (<a href="https://codepen.io/rycbar42">@rycbar42</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+          <h2>HTML Structure</h2>
+          <p>
+            The HTML for the image slider is relatively simple and
+            straightforward. We use <strong>radio buttons</strong> to keep track
+            of which image is currently being displayed, and labels for user
+            interaction. We wrap all images with the
+            <code class="inline-code">&lt;figure&gt;</code> tag, with optional
+            <code class="inline-code">&lt;figcaption&gt;</code> for adding
+            captions to the images. Here's the basic structure:
+          </p>
+          <pre>
+          <code class="language-html">
+    &lt;div class=&quot;slider&quot;&gt;
+    &lt;!-- radio buttons for css states; will not display --&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;pic&quot; id=&quot;pic1&quot; checked /&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;pic&quot; id=&quot;pic2&quot; /&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;pic&quot; id=&quot;pic3&quot; /&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;pic&quot; id=&quot;pic4&quot; /&gt;
+    &lt;!-- label buttons --&gt;
+    &lt;div class=&quot;labels&quot;&gt;
+      &lt;label for=&quot;pic1&quot;&gt;&lt;/label&gt;
+      &lt;label for=&quot;pic2&quot;&gt;&lt;/label&gt;
+      &lt;label for=&quot;pic3&quot;&gt;&lt;/label&gt;
+      &lt;label for=&quot;pic4&quot;&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;!-- images --&gt;
+    &lt;div class=&quot;image-list&quot;&gt;
+      &lt;figure class=&quot;slide&quot;&gt;
+        &lt;img src=&quot;https://picsum.photos/id/16/600/400&quot; /&gt;
+        &lt;figcaption&gt;caption text-1&lt;/figcaption&gt;
+      &lt;/figure&gt;
+      &lt;figure class=&quot;slide&quot;&gt;
+        &lt;img src=&quot;https://picsum.photos/id/18/600/400&quot; /&gt;
+        &lt;figcaption&gt;caption text-2&lt;/figcaption&gt;
+      &lt;/figure&gt;
+      &lt;figure class=&quot;slide&quot;&gt;
+        &lt;img src=&quot;https://picsum.photos/id/20/600/400&quot; /&gt;
+        &lt;figcaption&gt;caption text-3&lt;/figcaption&gt;
+      &lt;/figure&gt;
+      &lt;figure class=&quot;slide&quot;&gt;
+        &lt;img src=&quot;https://picsum.photos/id/22/600/400&quot; /&gt;
+        &lt;figcaption&gt;caption text-4&lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+        </pre>
+          <p>
+            The main container is a div with class <code>slider</code>. Inside
+            this container, we have:
+          </p>
+          <ol>
+            <li>
+              Radio buttons that will control the image switching. These will be
+              hidden from the user.
+            </li>
+            <li>
+              Labels that act as custom radio buttons, giving a visual cue to
+              the user for switching images.
+            </li>
+            <li>
+              A div with class
+              <code class="inline-code">image-list</code> that contains all
+              images in the slider. Each image and its caption is wrapped in a
+              <code class="inline-code">figure</code> tag.
+            </li>
+          </ol>
+          <h2>CSS Styling</h2>
+          <p>
+            Now, let's break down the CSS involved in making this image slider
+            work.
+          </p>
+          <pre>
+            <code class="language-css">
+  .slider {
+    width: clamp(10rem, 100%, 30rem);
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem;
+  }
+
+  .image-list {
+    width: 500%;
+    display: flex;
+    height: inherit;
+    position: relative;
+    transition: 1s;
+  }
+
+  .slide {
+    width: 20%;
+    position: relative;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+
+  .slide figcaption {
+    z-index: 2;
+    background-color: #0980a7;
+    color: #eff1f5;
+    font-style: italic;
+    position: absolute;
+    text-align: center;
+    bottom: 0%;
+    width: 100%;
+    padding: 0.5rem 0 1rem 0;
+  }</code></pre>
+          <ol>
+            <li>
+              The <code class="inline-code">.slider</code> class is our main
+              container. We set <code class="inline-code">overflow</code> to
+              <code class="inline-code">hidden</code> to ensure any content that
+              doesn't fit within the box isn't shown.
+            </li>
+            <li>
+              The <code class="inline-code">.image-list</code> class contains
+              all our images. We make it five times the width of the
+              <code class="inline-code">.slider</code> to accommodate five
+              slides and make them appear inline using
+              <code class="inline-code">display: flex</code>.
+            </li>
+            <li>
+              Each <code class="inline-code">.slide</code> is set to be 20% of
+              the total width of the
+              <code class="inline-code">.image-list</code>, hence allowing five
+              slides to fit perfectly across the width.
+            </li>
+            <li>
+              The <code class="inline-code">img</code> inside each slide is set
+              to fill the entire width of its parent slide.
+            </li>
+            <li>
+              The <code class="inline-code">figcaption</code> inside each slide
+              is absolutely positioned at the bottom of each slide and has some
+              basic styling applied for presentation.
+            </li>
+          </ol>
+          <p>
+            The secret sauce to the image slide transition is the following
+            block of CSS:
+          </p>
+          <pre><code class="language-css">
+  input[id="pic1"]:checked ~ .image-list {
+    transform: translate(0);
+  }
+  
+  input[id="pic2"]:checked ~ .image-list {
+    transform: translate(-20%);
+  }
+  
+  input[id="pic3"]:checked ~ .image-list {
+    transform: translate(-40%);
+  }
+  
+  input[id="pic4"]:checked ~ .image-list {
+    transform: translate(-60%);
+  }</code></pre>
+          <p>
+            Whenever an <code class="inline-code">input</code> with the id
+            <code class="inline-code">pic1</code>,
+            <code class="inline-code">pic2</code>, etc., is checked, it applies
+            a <code class="inline-code">transform: translate()</code> to the
+            <code class="inline-code">.image-list</code>. This creates a smooth
+            slide transition as the images move from one to the next.
+          </p>
+          <p>
+            The rest of the CSS involves general styles and styles for the
+            custom radio buttons (the labels for the hidden input radio
+            buttons). The magic behind this interaction lies in the following
+            CSS rules:
+          </p>
+          <pre><code class="language-css">
+  input {
+    display: none;
+  }
+  
+  .labels label {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid #eff1f5;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+  
+  /* change radio button checked style */
+  input[id="pic1"]:checked ~ .labels label[for="pic1"],
+  input[id="pic2"]:checked ~ .labels label[for="pic2"],
+  input[id="pic3"]:checked ~ .labels label[for="pic3"],
+  input[id="pic4"]:checked ~ .labels label[for="pic4"] {
+    background-color: #eff1f5;
+  }
+          </code></pre>
+          <p>
+            Here we are using the
+            <code class="inline-code">:checked</code> pseudo-class in
+            conjunction with the General sibling combinator (<code
+              class="inline-code"
+              >~</code
+            >) to target the corresponding label for the selected radio button.
+            When a radio button is selected, its corresponding label gets a new
+            background color.
+          </p>
+          <p>
+            And there you have it! A fully functional, responsive image slider
+            created with only HTML and CSS. This can be easily modified and
+            expanded as needed to suit your website and its style.
+          </p>
+          <div class="slider" id="slider-blog">
+            <!-- radio buttons for css states; will not display -->
+            <input type="radio" name="pic" id="pic1" checked />
+            <input type="radio" name="pic" id="pic2" />
+            <input type="radio" name="pic" id="pic3" />
+            <input type="radio" name="pic" id="pic4" />
+            <!-- label buttons -->
+            <div class="labels">
+              <label for="pic1"></label>
+              <label for="pic2"></label>
+              <label for="pic3"></label>
+              <label for="pic4"></label>
+            </div>
+            <!-- images -->
+            <div class="image-list">
+              <figure class="slide">
+                <img src="https://picsum.photos/id/16/600/400" />
+                <figcaption>caption text-1</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="https://picsum.photos/id/18/600/400" />
+                <figcaption>caption text-2</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="https://picsum.photos/id/20/600/400" />
+                <figcaption>caption text-3</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="https://picsum.photos/id/22/600/400" />
+                <figcaption>caption text-4</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <nav class="blog-nav">
+      <a href="blog4.html">Prev</a>
+      <a href="blog1.html">Next</a>
+      <a href="../blog.html">Back to list</a>
+    </nav>
+    <!-- combined comp: footer -->
+    <footer>
+      <a href="../index.html"
+        ><img
+          class="wp-logo"
+          src="../assets/WP_logo_dark.svg"
+          alt="Logo - Wenxuan Pan"
+      /></a>
+      <p>© 2023 Wenxuan Pan</p>
+    </footer>
+    <script src="../js/prism.js"></script>
+  </body>
+</html>

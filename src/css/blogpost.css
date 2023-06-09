@@ -141,16 +141,10 @@ figcaption a {
   }
 }
 
-code {
-  display: block;
-  padding: 15px;
-  margin: 10px 0;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 16px;
-  color: #333;
+.inline-code {
   background-color: #f4f4f4;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  white-space: pre-wrap; /* wrap long lines */
-  word-wrap: break-word; /* break words to prevent overflow */
+  display: inline;
+  padding: 0 0.2rem;
+  border-radius: 0.2rem;
+  color: crimson;
 }

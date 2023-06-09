@@ -8,6 +8,12 @@
   border-radius: 0.5rem;
 }
 
+#slider-blog {
+  aspect-ratio: 3 / 2;
+  align-self: center;
+  width: 100%;
+}
+
 .image-list {
   width: 500%;
   display: flex;
