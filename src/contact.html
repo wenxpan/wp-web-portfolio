@@ -79,7 +79,12 @@
       <section id="contact-form">
         <h3>Contact Form</h3>
         <p>Fill in this form, and I'll get back to you with 48 hours.</p>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="8bd4be39-f2fc-4fc0-9d91-ea9b6e6364ca"
+          />
           <label for="name">Name<em>*</em></label>
           <input type="text" id="name" name="name" required />
           <label for="email">Email<em>*</em></label>

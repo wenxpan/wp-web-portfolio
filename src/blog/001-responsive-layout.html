@@ -7,6 +7,7 @@
     <title>Responsive Web Design: Harnessing the Power of em and rem</title>
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/blogpost.css" />
+    <link rel="stylesheet" href="../css/prism.css" />
     <link rel="icon" type="image/svg" href="../assets/WP_logo_dark.svg" />
   </head>
   <body>
@@ -63,11 +64,9 @@
 
           <h2>Implementing em and rem</h2>
           <p>Utilizing em and rem is relatively simple. Here is an example:</p>
-          <code>
-            html { font-size: 16px; }<br />
-            p { font-size: 1em; }<br />
-            h1 { font-size: 2.5rem; }
-          </code>
+          <pre class="language-html"><code>  html { font-size: 16px; }
+  p { font-size: 1em; }
+  h1 { font-size: 2.5rem; }</code></pre>
           <p>
             In this example, the paragraph text will be 16px (1em = 16px) as
             it's relative to the root. The header text will be 40px (2.5 * 16px
