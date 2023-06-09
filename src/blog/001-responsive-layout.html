@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Design: Harnessing the Power of em and rem</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/blogpost.css" />
+    <link rel="icon" type="image/svg" href="../assets/WP_logo_dark.svg" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <a href="../index.html"
+        ><img
+          class="wp-logo"
+          src="../assets/WP_logo_dark.svg"
+          alt="Logo - Wenxuan Pan"
+      /></a>
+      <nav class="header-nav">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../blog.html" id="nav-active">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="blog-post-main">
+      <article>
+        <!-- combinend comp: title banner -->
+        <section id="blog-heading-4">
+          <h1>Responsive Web Design: Harnessing the Power of em and rem</h1>
+          <p>06/03/2023</p>
+        </section>
+        <!-- combined comp: main content -->
+        <div class="blog-content">
+          <h2>The Importance of Responsive Design</h2>
+          <p>
+            With a plethora of devices at their disposal, users today can access
+            the web from screens of all sizes. Hence, creating a
+            <b>responsive website layout</b> is more critical than ever. It
+            ensures that your site is accessible and visually appealing on a
+            wide range of devices, be it a smartphone, tablet, or desktop.
+          </p>
+
+          <h2>Understanding em and rem Units</h2>
+          <p>
+            When creating responsive designs, CSS units like em and rem are your
+            best friends. They are <b>relative units</b> that allow for flexible
+            spacing, sizing, and more, making your website adapt beautifully to
+            different screen sizes.
+          </p>
+
+          <p>
+            The <b>em</b> unit is relative to the font-size of its closest
+            parent. This means that if a parent element has a font-size of 16px,
+            1em in that scope would equal 16px. On the other hand, the
+            <b>rem</b> (root em) unit is relative to the root—or the
+            html—element, which provides a consistent measurement across your
+            site.
+          </p>
+
+          <h2>Implementing em and rem</h2>
+          <p>Utilizing em and rem is relatively simple. Here is an example:</p>
+          <code>
+            html { font-size: 16px; }<br />
+            p { font-size: 1em; }<br />
+            h1 { font-size: 2.5rem; }
+          </code>
+          <p>
+            In this example, the paragraph text will be 16px (1em = 16px) as
+            it's relative to the root. The header text will be 40px (2.5 * 16px
+            = 40px) regardless of its parent's font-size.
+          </p>
+
+          <h2>The Power of Responsive Units</h2>
+          <p>
+            By leveraging em and rem units, you can ensure your website scales
+            nicely with the user's preference. If a user prefers larger text,
+            rem and em units will scale accordingly, whereas px units will
+            remain static.
+          </p>
+          <p>
+            Moreover, these units allow for more harmonious design, as elements
+            can be sized proportionally to each other. It's an essential aspect
+            of responsive design and a best practice every web developer should
+            master.
+          </p>
+        </div>
+      </article>
+    </main>
+    <nav class="blog-nav">
+      <a href="blog3.html">Prev</a>
+      <a href="blog5.html">Next</a>
+      <a href="../blog.html">Back to list</a>
+    </nav>
+    <!-- combined comp: footer -->
+    <footer>
+      <a href="../index.html"
+        ><img
+          class="wp-logo"
+          src="../assets/WP_logo_dark.svg"
+          alt="Logo - Wenxuan Pan"
+      /></a>
+      <p>© 2023 Wenxuan Pan</p>
+    </footer>
+  </body>
+</html>
