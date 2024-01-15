@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Deployed Website - Vercel](https://wenxuan-pan-portfolio.vercel.app/)
+- [Deployed Website - Vercel](https://wenxuan-pan.vercel.app)
 - [Github Repo](https://github.com/wenxuan-pan/WenxuanPan_T1A2)
 
 ## Description
